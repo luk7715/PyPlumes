@@ -1,6 +1,6 @@
 # PyPlumes
-A workspace for plume particle models
-Translated from a model originally written in Fortran 
+A workspace for a plume particle model in Python. <br />
+Translated and modified from [this model] (https://github.com/Veyza/dudi) originally written in Fortran. 
 
 
 

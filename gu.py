@@ -34,7 +34,7 @@ def Gu_integral(sd):
   low = const.rmin
   Si = np.zeros(const.GRN)
   
-  xi, wi = help.GaussLegendreQuadra(const.order_R)
+  Xi, Wi = help.GaussLegendreQuadra(const.order_R)
   for i  in range(0, const.GRN):
     ldif = up - low
     ldif = ldif * 0.50
@@ -42,8 +42,8 @@ def Gu_integral(sd):
     lsum = lsum * 0.50  	
 
     for ii  in range(0, const.order_R):
-      r_i = ldif * xi[ii] + lsum
-      Si[i] = Si[i] + ldif * wi[ii] \
+      r_i = ldif * Xi[ii] + lsum
+      Si[i] = Si[i] + ldif * Wi[ii] \
         * distf.size_distribution(r_i, sd, const.p) \
         * distf.ejection_speed_distribution(ui[i], r_i)
     # enddo
@@ -57,7 +57,7 @@ def Gu_integral(sd):
      Si = Si * const.pi * 1*(10**-12)
   
   for i  in range(0, const.GRN):
-    if(Si(i) < 0  or  Si(i)  !=  Si(i)) :
+    if(Si[i] < 0  or  Si[i]  !=  Si[i]) :
       f = open("Gu_integral_outputs.txt", "a")
       f.write("\nGu has an incorrect value of " + Si[i] + "\n")
       f.close
@@ -73,15 +73,15 @@ def Gu_integral(sd):
 # resuls is in kg
 def mass_production(sd, r1, r2):
   mass = 0.0
-  xi , wi = help.GaussLegendreQuadra(const.order_R)
+  Xi , Wi = help.GaussLegendreQuadra(const.order_R)
   ldif = r2 - r1
   ldif = ldif * 0.50
   lsum = r2 + r1
   lsum = lsum * 0.50  
   
   for i  in range(0, const.order_R):
-    r_i = ldif * xi[i] + lsum
-    mass = mass + ldif * wi[i] * distf.size_distribution(r_i, sd, 3)
+    r_i = ldif * Xi[i] + lsum
+    mass = mass + ldif * Wi[i] * distf.size_distribution(r_i, sd, 3)
   # enddo
   
   # upon integration we obtained the volume of particles as if they were cubes

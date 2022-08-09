@@ -66,7 +66,8 @@ def circle_intersection(x0, y0, R0, x1, R1):
     
     	
 def vector_product(x,y):
-  z=np.arrary[0.,0.,0.]
+  z = np.array([0.0,0.0,0.0])
+
         #real(8), intent(in) :: x(3), y(3)
         #real(8) z(3)
       	
@@ -343,6 +344,8 @@ def GaussLegendreQuadra(order):
     #print('order of integration must be equal to 5, 10, 20, 30, 40 or 50')
     #print('\n'+'check variables order_v and order_R')
         # endif
+  xi = np.zeros([order+1,1])
+  wi = np.zeros([order+1,1])
   match order:
     case 50:
       xi[0]=0; wi[0]=0

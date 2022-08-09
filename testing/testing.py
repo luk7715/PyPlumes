@@ -1,9 +1,19 @@
 import numpy as np
+import os
+import sys
+import inspect
+import pandas as pd
+
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(0, parentdir)
+
 import help 
 import const as c 
 import variables as var
 import twobody as tb
 import distributions as distf
+import input 
 import integrator as inte
 
 
@@ -12,6 +22,18 @@ M1 = np.array([1,1,1])
 A = np.zeros((3,3))
 B = np.array([0,0,0])
 
+
+print("source is ")
+var.source = input.read_sources_params("PyPlumes/input_data_files/Enceladus_jet.dat", 1)
+print("the last item is " + str(var.source.alphaM))
+alm = np.pi/2 + 80.025 * np.pi / 180
+print(alm)
+print(var.source.eta)
+
+#var.point = input.read_spacecraft_coordinates("PyPlumes/input_data_files/Cassini_E2_flyby.dat", 100)
+ttab, var.point = input.read_Cassini_E2(100)
+print(ttab)
+print(var.point.alpha)
 
 A[0] = t1 
 A[1] = ([1,3,10])

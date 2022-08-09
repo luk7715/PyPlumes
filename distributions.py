@@ -39,6 +39,7 @@ def ejection_direction_distribution(distribution_shape, wpsi, psi, lambdaM, zeta
   omega5 = 0.08726646
   omega10 = 0.1745329
   omega45 = 0.7853982
+  fpsi = 0.0
 
   match distribution_shape:
     case 1:
@@ -104,6 +105,7 @@ def ejection_direction_distribution(distribution_shape, wpsi, psi, lambdaM, zeta
 # psi and lambdaM are respectively polar angle
 # and azimuth of ejection in the horizontal CS
 def Jacobian_tilt(psi, lambdaM, zeta, A):  
+  J= 0.0
   if(psi < 0.120  and  zeta < 0.120) :
     J = psi / np.sqrt(psi*psi + zeta*zeta - 2.0 * psi * zeta * np.cos(lambdaM - A))
   else:
@@ -130,6 +132,8 @@ def Jacobian_tilt(psi, lambdaM, zeta, A):
 # R is the particle size
 def ejection_speed_distribution(u, R):
   Rc = 0.5
+  fu = 0.0
+
   match (var.ud.ud_shape):
 
     case 1 :
@@ -164,7 +168,7 @@ def size_distribution(R, sd, mom):
   sigma = 1.50
   r1 = 0.20
   r2 = 20.0
-   
+  fR = 0.0 
   match sd:
 
     case 1:
@@ -208,7 +212,7 @@ def size_distribution(R, sd, mom):
 # rate at maximum.
 # ratefun is the parameter used to choose the expression for the gammarate
 def production_rate(t, gamma0, ratefun): 
-  
+  gammarate = 0.0
   match (ratefun):
     case 1:
       gammarate = 0.0

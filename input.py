@@ -7,13 +7,15 @@ import help
 
 
 
-# input the spacecraft coordinates from the file with the name 
+# A template for inputing the spacecraft coordinates from the file with the name 
 # stored in the variable fname
 # in the file fname the coordinates are written as follows
 # radial distance from the moon center [m], latitude [deg], eastern longitude [deg]
 def read_spacecraft_coordinates(fname,nt):
-  data = pd.read_csv(fname, nrows = nt)  ##can choose the desired columns here too
-  data_in_arrays = data.values
+  data = np.loadtxt(fname, max_rows= nt)
+  data_in_arrays = data
+  #print(data_in_arrays)
+
 
   var.point.r = data_in_arrays[:,0] ; var.point.alpha = data_in_arrays[:,1]
   var.point.beta = data_in_arrays[:,2]
@@ -22,6 +24,7 @@ def read_spacecraft_coordinates(fname,nt):
   var.point.alpha = const.halfpi - var.point.alpha 
   var.point.beta = var.point.beta *const.deg2rad
 
+  var.point.rvector = np.zeros([3,nt])
   var.point.rvector[0] = var.point.r * np.sin(var.point.alpha) * np.cos(var.point.beta)
   var.point.rvector[1] = var.point.r * np.sin(var.point.alpha) * np.sin(var.point.beta)
   var.point.rvector[2] = var.point.r * np.cos(var.point.alpha) 
@@ -30,31 +33,67 @@ def read_spacecraft_coordinates(fname,nt):
   var.point.compute = True 
 
   return var.point
-
 # end subroutine read_spacecraft_coordinates
+
+
+##Specifically for read in the Cassini E2 flyby data file based on the template above
+#the file was prepared in advance using SPICE software
+def read_Cassini_E2(nt):
+  data = np.loadtxt("PyPlumes/input_data_files/Cassini_E2_flyby.dat", max_rows= nt)
+  data_in_arrays = data
+  #print(data_in_arrays)
+
+  ttab = np.zeros([1,nt])
+  ttab = data_in_arrays[:,0]
+
+  var.point.r = data_in_arrays[:,1] ; var.point.alpha = data_in_arrays[:,2]
+  var.point.beta = data_in_arrays[:,3]
+
+  var.point.alpha = var.point.alpha * const.deg2rad
+  var.point.alpha = const.halfpi - var.point.alpha 
+  var.point.beta = var.point.beta *const.deg2rad
+
+  var.point.rvector = np.zeros([3,nt])
+  var.point.rvector[0] = var.point.r * np.sin(var.point.alpha) * np.cos(var.point.beta)
+  var.point.rvector[1] = var.point.r * np.sin(var.point.alpha) * np.sin(var.point.beta)
+  var.point.rvector[2] = var.point.r * np.cos(var.point.alpha) 
+
+  var.point.r_scaled = var.point.r/const.rm
+  var.point.compute = True 
+
+  return ttab, var.point
+
 
 # input the parameters of the sources from the file with the name
 # stored in the variable fname
 def read_sources_params(fname, Ns):
 
-  data = pd.read_csv(fname, nrows = Ns)
-  data_in_arrays = data.values
-  
-  var.source.alphaM = data_in_arrays[:,0] ; var.source.betaM = data_in_arrays[:,1]
-  var.source.zeta = data_in_arrays[:,2] ; var.source.eta = data_in_arrays[:,3]
-  var.source.production_fun = data_in_arrays[:,4] ; var.source.production_rate = data_in_arrays[:,5]
-  var.source.ud_shape = data_in_arrays[:,6] ; var.source.ud_umin = data_in_arrays[:,7]
-  var.source.ud_umax = data_in_arrays[:,8] ; var.source.ejection_angle_distr = data_in_arrays[:,9]
-  var.source.sd = data_in_arrays[:,10]
+  data = np.loadtxt(fname, max_rows= Ns)
+  data_in_arrays = data
+  #print(data_in_arrays)
+
+  var.source.alphaM = data_in_arrays[0] ; var.source.betaM = data_in_arrays[1]
+  var.source.zeta = data_in_arrays[2] ; var.source.eta = data_in_arrays[3]
+  var.source.production_fun = data_in_arrays[4] ; var.source.production_rate = data_in_arrays[5]
+  var.source.ud_shape = data_in_arrays[6] ; var.source.ud_umin = data_in_arrays[7]
+  var.source.ud_umax = data_in_arrays[8] ; var.source.ejection_angle_distr = data_in_arrays[9]
+  var.source.sd = data_in_arrays[10]
+  #print("check input")
+  #print (var.source.alphaM)
 
   var.source.r = const.rm
   var.source.alphaM = var.source.alphaM * const.deg2rad
+  #print("in the function")
+  #print (var.source.alphaM)
   var.source.betaM = var.source.betaM * const.deg2rad
   var.source.alphaM = const.halfpi - var.source.alphaM
+  #print("check output")
+  #print (var.source.alphaM)
 
   var.source.zeta = var.source.zeta *const.deg2rad
   var.source.eta = var.source.eta * const.deg2rad
 
+  var.source.rrM = np.array([0,0,0])
   var.source.rrM[0] = const.rm *np.sin(var.source.alphaM) * np.cos(var.source.betaM)
   var.source.rrM[1] = const.rm *np.sin(var.source.alphaM) * np.sin(var.source.betaM)
   var.source.rrM[2] = const.rm *np.cos(var.source.alphaM)
@@ -67,6 +106,7 @@ def read_sources_params(fname, Ns):
 
   axis = jet_direction(var.source.betaM, var.source.zeta, var.source.eta,var.source.rrM)
   var.source.symmetry_axis = axis 
+  return var.source
           				
 # end function read_sources_params
 
@@ -81,6 +121,8 @@ def jet_direction(betaM, zeta, eta, rrM):
 
   rtmp = rrM / const.rm
   tmpang = 3.0 * const.halfpi-betaM
+  xj = np.array([0.0,0.0,0.0])
+
   if(zeta != 0.0): 
     xout, yout, zout = help.eulrot(0.0, 0.0, tmpang, rtmp[0], rtmp[1], rtmp[2], 0)
     rtmp[0] = xout ; rtmp[1] = yout ; rtmp[2] = zout
