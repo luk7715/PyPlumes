@@ -78,6 +78,9 @@ def read_sources_params(fname, Ns):
   var.source.ud_shape = data_in_arrays[6] ; var.source.ud_umin = data_in_arrays[7]
   var.source.ud_umax = data_in_arrays[8] ; var.source.ejection_angle_distr = data_in_arrays[9]
   var.source.sd = data_in_arrays[10]
+
+  var.ud.ud_shape = data_in_arrays[6] ; var.ud.umin = data_in_arrays[7]
+  var.ud.umax = data_in_arrays[8] 
   #print("check input")
   #print (var.source.alphaM)
 

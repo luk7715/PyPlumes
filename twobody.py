@@ -46,12 +46,12 @@ def Apu_u_angles_ddphidtheta(v,theta,e,dbeta,dphi,u,dphi_is_large):
   if psi != psi or np.abs(psi-const.halfpi) < 1*(10**-8):
 
     if psi != psi:
-      f = open("Apu_angles.txt", "a")
-      f.write("\nApu << sin(psi) = " + hh/source_r/u + "corrections applied\n")
+      f = open("PyPlumes/results/Apu_angles.txt", "a")
+      f.write("\nApu << sin(psi) = " + str(hh/source_r/u)+ "corrections applied\n")
       f.close()
       # endif
     if np.abs(psi-const.halfpi) < 1*(10**-8):
-      f = open("Apu_angles.txt", "a")
+      f = open("PyPlumes/results/Apu_angles.txt", "a")
       f.write("\npsi is close to pi/2, corrections applied\n")
       f.close()
       # endif
@@ -123,7 +123,7 @@ def Apu_u_angles_ddphidtheta(v,theta,e,dbeta,dphi,u,dphi_is_large):
     numder = (-dphi1 + 8.0 * dphi2 - 8.0 * dphi3 + dphi4) / 12.0 / delta 
     numder = (dphi2 - dphi3) / 2.0 / delta
 
-    f = open("Apu_angles.txt", "a")
+    f = open("PyPlumes/results/Apu_angles.txt", "a")
     f.write("\nthe derivative d_Delta_phi/d_theta was \
             obtained numerically because the analytical \
             expression contains numerically difficult parts\n")
@@ -190,8 +190,10 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
     fac1 = 0.0
   else:
 #	 interpolate Gu from a precalculated table
-    if(uu / var.source.ud_umax > var.source.ui) :
-      fac1 = velocity * var.source.Gu_precalc / uu / uu
+    print("ui is " +str(len(var.source.ui)))
+    print(var.source.Gu_precalc)
+    if(uu / var.source.ud_umax > var.source.ui[const.GRN]) :
+      fac1 = velocity * var.source.Gu_precalc[const.GRN] / uu / uu
     else:
       fac1 = help.LiNTERPOL(const.GRN, var.source.Gu_precalc, var.source.ui, uu) 
       fac1 = velocity * fac1 / uu / uu
@@ -236,14 +238,14 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
       
       Integrand = Integrand + tmpIntegrand
       if(tmpIntegrand  !=  tmpIntegrand) :
-        f = open("Integrand_number_density_output.txt","a")
+        f = open("PyPlumes/results/Integrand_number_density_output.txt","a")
         f.write("\n")
         f.write("\nNaN is obtained for an integrand value \n")
-        f.write("factor related to ejection speed distribution: fac1 = " + fac1 + "\n")
-        f.write("factor related to ejection direction distribution: fac2 = ", + fac2 + "\n")
-        f.write("the partial derivaive of delta phi by theta = " + ddphidtheta[i] + "\n")
-        f.write("theta = " + theta[i] + "   psi = " + psi[i]+"   lambdaM = "+lambdaM + "\n")
-        f.write("dust production rate = " + rate[i] +"\n") 
+        f.write("factor related to ejection speed distribution: fac1 = " + str(fac1) + "\n")
+        f.write("factor related to ejection direction distribution: fac2 = " + str(fac2) + "\n")
+        f.write("the partial derivaive of delta phi by theta = " + str(ddphidtheta[i]) + "\n")
+        f.write("theta = " + str(theta[i]) + "   psi = " + str(psi[i]) +"   lambdaM = "+ str(lambdaM) + "\n")
+        f.write("dust production rate = " + str(rate[i]) +"\n") 
         f.close
       # endif
     # endif
@@ -347,17 +349,17 @@ def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
       # endif
 
       if solved != 1 and  theta[i] > 0.0 :
-        f = open("theta_geometry_output.txt","a")
+        f = open("PyPlumes/results/theta_geometry_output.txt","a")
         f.write("\n")
-        f.write("\nTheta was found with an insufficient accuracy of" + discr + "from the geometry of hyperbola\n")
-        f.write("for r = " + r0 + "\n")
-        f.write("dphi = " + phi + "\n")
-        f.write("the obtained value of eccentricity = " + ee[i] + "\n")
-        f.write("and the obtained value of theta = " + theta[i] + "\n")
+        f.write("\nTheta was found with an insufficient accuracy of" + str(discr) + "from the geometry of hyperbola\n")
+        f.write("for r = " + str(r0) + "\n")
+        f.write("dphi = " + str(phi) + "\n")
+        f.write("the obtained value of eccentricity = " + str(ee[i]) + "\n")
+        f.write("and the obtained value of theta = " + str(theta[i]) + "\n")
         f.close() 
        
         if dphi_is_large[i] == 1 :
-          f = open("theta_geometry_output.txt","a")
+          f = open("PyPlumes/results/theta_geometry_output.txt","a")
           f.write("\nthe case of \Delta\phi > pi has been encoutered\n")
           f.close()
         # endif
@@ -399,22 +401,27 @@ def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
 def theta_geometry_ellipse(r0, rm0, vv, phi, a0, timeDependence): 
   solved =  False 
   dphi_is_large =  np.array([0,0], dtype = bool) 
-  theta = -8880
+  theta = np.array([-888.0, -888.0])
   
-  r = r0 / rm0  ; rmoon = rm0 / rm0; a = a0 / rm0
+  r = r0 / rm0  ; rmoon = rm0 / rm0
+  a = a0 / rm0
   # define x-axis in the same direction as rmoonvector
-  r2d = np.array
+  r2d = np.array([0,0])
   r2d[0] = r; r2d[1] = 0.0    			
   # we don't have enough information to define the sign of r
   # vector in the right-handed coordinate system
   # but the value of theta that we are looking for are the same
   # in both cases
-  rm2d = np.array
+  rm2d = np.array([0.0,0.0])
   rm2d[0] = rmoon * np.cos(phi) ; rm2d[1] = rmoon * np.sin(phi)
+ # print("phi is " + str(phi))
+  #print(np.cos(phi))
+  #print(rmoon)
+  #print("rm2d is " + str(rm2d))
   
   # (x(1),y(1)) and (x(2),y(2)) are coordinates of 2 possible
   # position of the ellsipse's second focus
-  x, y = help.circle_intersection(rm2d[0], rm2d[1], 20 * a - rmoon, r2d[0], 20 * a - r) 
+  x, y = help.circle_intersection(rm2d[0], rm2d[1], 2.0 * a - rmoon, r2d[0], 2.0 * a - r) 
   # distance between the foci of the ellipse
   cc = np.sqrt(x**2 + y**2)
   ee = np.array([0,0])
@@ -490,32 +497,32 @@ def theta_geometry_ellipse(r0, rm0, vv, phi, a0, timeDependence):
           deltat[i] = 0.0
         # endif
       else:
-        theta = -7770
+        theta = np.array([-777.0,-777.0])
       # endif
                   
       if( solved != 1  and  theta[i] > 0.0) :
-        f = open("theta_geometry_output.txt","a")
+        f = open("PyPlumes/results/theta_geometry_output.txt","a")
         f.write("\n")
-        f.write("\nTheta was found with an insufficient accuracy of" + discr + "from the geometry of ellipse\n")
-        f.write("for r = " + r0 + "\n")
-        f.write("rt = " + rtest * rm0 + "\n")
-        f.write("f1 = " + f1 + "\n") 
-        f.write("f2 = " + f2 + "\n")
-        f.write("dphi = " + phi + "\n")
-        f.write("the obtained value of eccentricity = " + ee[i] + "\n") 
-        f.write("and the obtained value of theta = " + theta[i] + "\n")
+        f.write("\nTheta was found with an insufficient accuracy of" + str(discr) + "from the geometry of ellipse\n")
+        f.write("for r = " + str(r0) + "\n")
+        f.write("rt = " + str(rtest * rm0) + "\n")
+        f.write("f1 = " + str(f1) + "\n") 
+        f.write("f2 = " + str(f2) + "\n")
+        f.write("dphi = " + str(phi) + "\n")
+        f.write("the obtained value of eccentricity = " + str(ee[i]) + "\n") 
+        f.write("and the obtained value of theta = " + str(theta[i]) + "\n")
         f.close() 
        
         if dphi_is_large[i] == 1 :
-          f = open("theta_geometry_output.txt","a")
+          f = open("PyPlumes/results/theta_geometry_output.txt","a")
           f.write("\nthe case of \Delta\phi > pi has been encoutered\n")
           f.close()
     
         # endif
       # endif
     else:
-      theta[i] = -8880
-      ee[i] = -8880
+      theta[i] = -888.0
+      ee[i] = -888.0
       dphi_is_large[i] =  False 
     # endif
   return ee, theta, deltat, dphi_is_large
@@ -551,12 +558,13 @@ def control(theta, ee, phi, vv, r0, rm0, dphi_is_large):
   hh = r0 * vv * np.sin(theta)
   hh2 = hh * hh
   solved = False
+  eps = 1 * (10**-4)
 
 #  eccentricity (eq 31)
   ee1 = np.sqrt(1.0 + 2.0 * Ekep * (hh / const.gm) * (hh / const.gm))
-  if(np.abs(ee1 - ee) > const.eps) :
-    f = open("theta_geometry_output.txt","a")
-    f.write("\neccentricity is incorrect:" + ee + "instead of " + ee1 + "\n")
+  if(np.abs(ee1 - ee) > eps) :
+    f = open("PyPlumes/results/theta_geometry_output.txt","a")
+    f.write("\neccentricity is incorrect:" + str(ee) + "instead of " + str(ee1) + "\n")
     f.close
     # endif
 
@@ -566,28 +574,28 @@ def control(theta, ee, phi, vv, r0, rm0, dphi_is_large):
   #######################################
   if(cosp > 1.0) :
     cosp = 1.0
-    f = open("theta_geometry_output.txt","a")
+    f = open("PyPlumes/results/theta_geometry_output.txt","a")
     f.write("\ncos(phi) > 1 obtained, corrections applied\n")
     f.close 
   
   # endif
   if(cosp < -1.0) :
     cosp = -1.0
-    f = open("theta_geometry_output.txt","a")
+    f = open("PyPlumes/results/theta_geometry_output.txt","a")
     f.write("\ncos(phi) < -1 obtained, corrections applied\n")
     f.close
   # endif
   
   if(cospm > 1.0) :
     cospm = 1.0
-    f = open("theta_geometry_output.txt","a")
+    f = open("PyPlumes/results/theta_geometry_output.txt","a")
     f.write("\ncos(phiM) > 1 obtained, corrections applied\n")
     f.close 
   # endif
 
   if(cospm < -1.0) :
      cospm = -1.0
-     f = open("theta_geometry_output.txt","a")
+     f = open("PyPlumes/results/theta_geometry_output.txt","a")
      f.write("\ncos(phiM) < -1 obtained, corrections applied\n")
      f.close 
     
@@ -603,11 +611,11 @@ def control(theta, ee, phi, vv, r0, rm0, dphi_is_large):
   
   if(dphi_is_large) :
     discr = np.abs(2.0 * const.pi - dphi - phi) / np.abs(phi)
-    if discr < const.eps :
+    if discr < eps :
       solved == True
   else:
     discr = np.abs(dphi - phi) / np.abs(phi)
-    if discr < const.eps: 
+    if discr < eps: 
       solved == True
   
   return solved, discr

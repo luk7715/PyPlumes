@@ -28,7 +28,7 @@ trpower = 4
 
 
 # The def rules the integration determining the parameters and the limits
-def DUDI(density,tnow):
+def DUDI(tnow):
   #integer Nprestep
   # fraction which the interval of the pole integration constitutes
   # to the total interval of integration
@@ -51,26 +51,34 @@ def DUDI(density,tnow):
   # escape velosity at distance rr
   vc = np.sqrt(20 * const.gm / var.point.r)
   
+  amin = 0.0
   amin = (var.point.r + var.source.r) / 4.0 \
       + 0.50 * np.sqrt((var.point.r**2 + var.source.r**2) \
       / 4.0 - var.point.r * var.source.r * np.cos(dphi) / 2.0)
 
+  amin2 = 0.0
   amin2 = (2.0 / var.source.r - var.source.ud_umin**2 / const.gm)**(-1)
+  
   if(amin2  !=  amin2):
      amin2 = 0.0
 
   # minimal velocity possible at given position (defines minimal energy
   # or "size" of the orbit on which a particle can go from rm to rr
-  vmin = np.sqrt(const.gm * (2.0 / var.point.r - 1.0 / amin))
-  vmin2 = np.sqrt(const.gm * (2.0 / var.point.r - 1.0 / amin2))
+  vmin = np.sqrt(np.abs((const.gm * (2.0 / var.point.r - 1.0 / amin))))
+  vmin2 = np.sqrt(np.abs(const.gm * (2.0 / var.point.r - 1.0 / amin2)))
+  #print("vmin sqrt is " + str(const.gm * (2.0 / var.point.r - 1.0 / amin2)))
   # v_max is : the maximal *possible* speed at radius r,
   # assuming that the ejection velocity is limited by gas velocity
 
   vmax = np.sqrt(var.source.ud_umax * var.source.ud_umax \
           + 2.0 * const.gm * (1.0 / var.point.r - 1.0 / var.source.r))
-  
 
-  pole = amin > amin2
+  #print("amin is " +str(amin))
+  #print(amin2)
+
+  if amin > amin2:
+    pole = 1 
+
   if pole != True:
      vmin = vmin2
   

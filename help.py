@@ -34,6 +34,7 @@ def rot2d(r, phi):
     	# returns 2-d vectors x and y where (x(1), y(1))
     	# and (x(2), y(2)) are solutions of the SoE
 def circle_intersection(x0, y0, R0, x1, R1):
+  
   sR = R0 + R1
   dx = x0 - x1 ; sx = x0 + x1
   x1x0 = x0 * x1
@@ -48,15 +49,17 @@ def circle_intersection(x0, y0, R0, x1, R1):
 
   x = np.array([0,0]); y = np.array([0,0])
 
-  x[0] = ((R12 - R02) * dx + sx * sumdifs2 - sqrtshort) / (20 * sumdifs2)
+
+ 
+  x[0] = ((R12 - R02) * dx + sx * sumdifs2 - sqrtshort) / (2.0 * sumdifs2)
 
 
-  y[0] = (-R02 * dy2 + (x0 - x1) * sqrtshort + ybracket) / (20 * sumdifs2 * y0)
+  y[0] = (-R02 * dy2 + (x0 - x1) * sqrtshort + ybracket) / (2.0 * sumdifs2 * y0)
+ 
+  x[1] = ((R12 - R02) * dx + sx * sumdifs2 + sqrtshort) / (2.0 * sumdifs2)
 
-  x[1] = ((R12 - R02) * dx + sx * sumdifs2 + sqrtshort) / (20 * sumdifs2)
 
-
-  y[1] = (-R02 * dy2 + (x1 - x0) * sqrtshort + ybracket) / (20 * sumdifs2 * y0)
+  y[1] = (-R02 * dy2 + (x1 - x0) * sqrtshort + ybracket) / (2.0 * sumdifs2 * y0)
 
   return x, y
       # # end def circle_intersection
@@ -221,11 +224,15 @@ def eulrot(phiE, thetaE, psiE, xin, yin, zin,inverse):
 
 def ApuTrajectory():
   Rsource = var.source.rrM / var.source.r 
+  #print("Rsource is " + str(Rsource))
+  #print("dot product is " + str(np.dot(Rsource,var.point.rvector)))
+  #print("r is " + str(var.source.r))
       	
       	# dphi is an angle between a vector pointing to the source
       	# and a vector pointing to the spacecraft
-  dphi = np.arccos(np.dot(Rsource,var.point.rvector) / var.source.r)
-      	
+  dphi = np.arccos(np.dot(Rsource,var.point.rvector) / var.point.r)
+  #print(np.dot(Rsource,var.point.rvector) / var.point.r)
+  #print("dphi is " + str(dphi))    	
   # dbeta is an angle between proections of the same vectors
   # in the longitudinal plane
   dbeta = np.arccos((Rsource[0] * var.point.rvector[0] + Rsource[1] * var.point.rvector[1]) / (norma2d(Rsource[0:1]) * \

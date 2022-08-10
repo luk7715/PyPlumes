@@ -29,6 +29,9 @@ def Gu_integral(sd):
 
   for i in range (0,const.GRN):
     ui[i] = var.ud.umin + float(i) / float(const.GRN - 1)*(var.ud.umax - var.ud.umin)
+    #print("uii is " + str(ui[i]))
+
+  #print("ui is " + str(ui))
 
   up = const.rmax
   low = const.rmin
@@ -58,11 +61,12 @@ def Gu_integral(sd):
   
   for i  in range(0, const.GRN):
     if(Si[i] < 0  or  Si[i]  !=  Si[i]) :
-      f = open("Gu_integral_outputs.txt", "a")
+      f = open("PyPlumes/results/Gu_integral_outputs.txt", "a")
       f.write("\nGu has an incorrect value of " + Si[i] + "\n")
       f.close
     # endif
   # enddo
+  #print("si is " + str(Si))
   return ui, Si
   
 # # end def Gu_integral
