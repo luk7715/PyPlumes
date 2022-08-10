@@ -1,0 +1,366 @@
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.3977269968677035
+f2 = 8.02018787921364
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.564009460644586
+f2 = 8.186470342990525
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.3977269968677035
+f2 = 8.02018787921364
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.564009460644586
+f2 = 8.186470342990525
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.3977269968677035
+f2 = 8.02018787921364
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.564009460644586
+f2 = 8.186470342990525
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.3977269968677035
+f2 = 8.02018787921364
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.564009460644586
+f2 = 8.186470342990525
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.3977269968677035
+f2 = 8.02018787921364
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.564009460644586
+f2 = 8.186470342990525
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.3977269968677035
+f2 = 8.02018787921364
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.564009460644586
+f2 = 8.186470342990525
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.3977269968677035
+f2 = 8.02018787921364
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.564009460644586
+f2 = 8.186470342990525
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.3977269968677035
+f2 = 8.02018787921364
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.564009460644586
+f2 = 8.186470342990525
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.3977269968677035
+f2 = 8.02018787921364
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.564009460644586
+f2 = 8.186470342990525
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.3977269968677035
+f2 = 8.02018787921364
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.564009460644586
+f2 = 8.186470342990525
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.3977269968677035
+f2 = 8.02018787921364
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.564009460644586
+f2 = 8.186470342990525
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.3977269968677035
+f2 = 8.02018787921364
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.564009460644586
+f2 = 8.186470342990525
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.3977269968677035
+f2 = 8.02018787921364
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
+
+eccentricity is incorrect:0instead of 0.9819922641244138
+
+
+Theta was found with an insufficient accuracy of7.509904351318248from the geometry of ellipse
+for r = 3142000.0
+rt = 1585273.5940864247
+f1 = 2.564009460644586
+f2 = 8.186470342990525
+dphi = 0.6607244248336485
+the obtained value of eccentricity = 0
+and the obtained value of theta = 1.5707963267948966
+
+the case of \Delta\phi > pi has been encoutered
