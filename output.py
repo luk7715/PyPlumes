@@ -22,9 +22,9 @@ def result_out(density,nt):
   
   f = open("PyPlumes/results/twobody_model_result.txt","a") 
   for i  in range(0, nt):
-    f.write(density[i,:] + " " + density[i,:] + " " + var.point.r + \
-       " " + (const.halfpi - var.point.alpha[i]) * const.rad2deg \
-        + " " + var.point.beta[i]*const.rad2deg)
+    f.write(str(density[i,:]) + " " + str(density[i,:] )+ " " + str(var.point.r) + \
+       " " + str((const.halfpi - var.point.alpha[i]) * const.rad2deg) \
+        + " " + str(var.point.beta[i]*const.rad2deg))
     f.write("\n")
   f.close()
 
@@ -42,7 +42,7 @@ def cassini_flyby_out(density, ttab, bg, nt):
   f = open("PyPlumes/results/E2_profile.txt","a")
   for i  in range(0, nt):
     densitysum = np.sum (density[i,:]) + bg  
-    f.write(ttab[i] + " " + densitysum + "\n")
+    f.write(str(ttab[i]) + " " + str(densitysum) + "\n")
   f.close 
 # # end def cassini_flyby_out  
 

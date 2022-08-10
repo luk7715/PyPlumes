@@ -47,6 +47,8 @@ def DUDI(tnow):
   
   dphi, dbeta, angle = help.ApuTrajectory() 
   v_limits = np.array([0.0,0.0])
+  Nprestep = int(0)
+
   
   # escape velosity at distance rr
   vc = np.sqrt(20 * const.gm / var.point.r)
@@ -89,6 +91,8 @@ def DUDI(tnow):
     if pole == True :
       Nprestep = estimate_N_steps_pole_integration(var.source.zeta * const.rad2deg, var.point.r_scaled, \
             angle, var.source.is_jet)
+      
+      #print(Nprestep)
 
       v_limits[0] = vmin + veps
       v_limits[1] = (vmax - vmin) * prestep_relative_size + vmin
@@ -96,6 +100,8 @@ def DUDI(tnow):
       
       f1 =  tb.Integrand_number_density(v_limits[0], amin, dphi, dbeta, tnow)
       viprev = v_limits[0]
+
+      #print(Nprestep)
 
       for i  in range(1, Nprestep):
         vi = (float(i-1) / float(Nprestep))**trpower * vinterval + v_limits[1]
@@ -134,7 +140,7 @@ def DUDI(tnow):
       lsum = v_limits[1] + v_limits[0]
       lsum = lsum * 0.50
       for i  in range(0, const.order_v_hy):
-        term = tb.Integrand_number_density(ldif * xhy(i) + lsum, amin, dphi, dbeta, tnow)
+        term = tb.Integrand_number_density(ldif * xhy[i] + lsum, amin, dphi, dbeta, tnow)
         density[1] = density[1] + ldif * why[i] * term
       # enddo
     # endif
@@ -151,23 +157,25 @@ def estimate_N_steps_pole_integration(z, r, xi, isjet):
 
   ximin = 0.17453290  	# 10 degree in radians
   ximax = 0.78539820  	# 45 degree in radians
-  
-  if(isjet == True) :
-    if(ximin < xi  and  xi < ximax) :
+  Nprestep = 15
+
+
+  if(isjet == 1) :
+    if(ximin < xi, xi < ximax) :
       if(r < 2.0) :
         Nprestep = 15 + 10 * int(z)
-        return
+        
       else:
         Nprestep = 10 + 5 * int(z)
-        return
+        
       # endif
     else:
       if(r < 1.05) :
         Nprestep = 80
-        return
+        
       else:
         Nprestep = 0
-        return
+        
       # endif
     # endif
  
@@ -175,6 +183,7 @@ def estimate_N_steps_pole_integration(z, r, xi, isjet):
     Nprestep = 15
   # endif
   
+  #print("n is " + str(Nprestep))
   return Nprestep
 
 # # end def estimate_N_steps_pole_integration

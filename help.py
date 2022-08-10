@@ -89,6 +89,7 @@ def vector_product(x,y):
     	# if xout < x(1) or xout > x(N) : 
     	# yout = y(1) or yout = y(N) respectively
 def LiNTERPOL(N, y, x, xout): 
+  N = N-1
   if(xout < x[0]) :
     yout = y[0]
     return
@@ -168,6 +169,8 @@ def myatan(N, re0, im):
     # returns values in [0, 2pi]			
 def myatan1(re0, im):
   re = re0
+
+  #print(re)
       	# avoid problems with zero re
   if re < 1*(10**-12)   and  re > 0.0 :
     re = 1*(10**-12) 

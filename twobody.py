@@ -30,6 +30,7 @@ def Apu_u_angles_ddphidtheta(v,theta,e,dbeta,dphi,u,dphi_is_large):
   source_alphaM = var.source.alphaM; source_r = var.source.r; source_betaM = var.source.betaM
   source_zeta = var.source.zeta; source_eta = var.source.eta 
   
+  #print(point_alpha)
 
   ##trig calculations 
   sinal = np.sin(point_alpha) ; cosal = np.cos(point_alpha)
@@ -47,7 +48,7 @@ def Apu_u_angles_ddphidtheta(v,theta,e,dbeta,dphi,u,dphi_is_large):
 
     if psi != psi:
       f = open("PyPlumes/results/Apu_angles.txt", "a")
-      f.write("\nApu << sin(psi) = " + str(hh/source_r/u)+ "corrections applied\n")
+      f.write("\nApu << sin(psi) = " + str(hh/source_r/u)+ " corrections applied\n")
       f.close()
       # endif
     if np.abs(psi-const.halfpi) < 1*(10**-8):
@@ -82,9 +83,13 @@ def Apu_u_angles_ddphidtheta(v,theta,e,dbeta,dphi,u,dphi_is_large):
     # endif
   # endif
 
+  #print(sinal)
+  #print(cosal)
+
   sinlambdaM = sinal * sinlambda / sinalM
   coslambdaM = (cosal - cosalM * cosdphi) / sinalM / sindphi
 
+  
   if dphi_is_large == 1 :
     sinlambda = - sinlambda
     coslambda = - coslambda
@@ -124,9 +129,7 @@ def Apu_u_angles_ddphidtheta(v,theta,e,dbeta,dphi,u,dphi_is_large):
     numder = (dphi2 - dphi3) / 2.0 / delta
 
     f = open("PyPlumes/results/Apu_angles.txt", "a")
-    f.write("\nthe derivative d_Delta_phi/d_theta was \
-            obtained numerically because the analytical \
-            expression contains numerically difficult parts\n")
+    f.write("\nthe derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts\n")
     f.close()
     ddphidtheta = numder
   # endif  		
@@ -181,7 +184,7 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
       ee, theta, deltat, dphi_is_large = theta_geometry_hyperbola(var.point.r, var.source.r, velocity,\
          dphi, np.abs(semi_major_axis),\
         var.source.production_fun > 0)
-
+  #print(ee)
 #~ 			write(*,*) 'intergand << theta', theta
 
   uu = np.sqrt(const.vesc * const.vesc + 2.0 * (velocity * velocity / 2.0 - const.gm / var.point.r))
@@ -190,10 +193,10 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
     fac1 = 0.0
   else:
 #	 interpolate Gu from a precalculated table
-    print("ui is " +str(len(var.source.ui)))
-    print(var.source.Gu_precalc)
-    if(uu / var.source.ud_umax > var.source.ui[const.GRN]) :
-      fac1 = velocity * var.source.Gu_precalc[const.GRN] / uu / uu
+    #print("ui is " +str(len(var.source.ui)))
+    #print(var.source.Gu_precalc)
+    if(uu / var.source.ud_umax > var.source.ui[const.GRN-1]) :
+      fac1 = velocity * var.source.Gu_precalc[const.GRN-1] / uu / uu
     else:
       fac1 = help.LiNTERPOL(const.GRN, var.source.Gu_precalc, var.source.ui, uu) 
       fac1 = velocity * fac1 / uu / uu
@@ -202,8 +205,10 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
   
   ####declare variables 
   Integrand = 0.0
-  wpsi = const.halfpi  
-  rate = np.array([0,0])
+  wpsi = np.array([const.halfpi, const.halfpi])
+  rate = np.array([0.0,0.0])
+  psi = np.array([0.0,0.0])
+  ddphidtheta = np.array([0.0,0.0])
 
   for i  in range(0, 1):
     if(var.source.production_fun > 0) :
@@ -214,9 +219,10 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
     # endif
 
     if theta[i] >= 0.0  and  rate[i] > 0 :
-
-      psi, wpsi, lambdaM, var_lambda, ddphidtheta, sindphi = Apu_u_angles_ddphidtheta(velocity, theta[i], ee[i],\
+      
+      psi[i], wpsi[i], lambdaM, var_lambda, ddphidtheta[i], sindphi = Apu_u_angles_ddphidtheta(velocity, theta[i], ee[i],\
         dbeta, dphi, uu, dphi_is_large[i])
+        
       
   # the distribution of ejection angle is defined in coordinates (wpsi, wlambdaM) 
   # where wpsi is an angle between the jet main axis of symmetry and the direction of ejection
@@ -225,9 +231,12 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
   # (alphaM, betaM, u, psi, lambdaM) -> (alpha, beta, v, theta, lambda)
   # and here psi is an angle between the direction of ejection and the normal to surface
 
+      #print(wpsi)
+      #print(psi)
+
       fac2 = distf.ejection_direction_distribution(var.source.ejection_angle_distr, wpsi[i],psi[i], lambdaM, \
         var.source.zeta, var.source.eta)
-      fac2 = fac2 / np.cos(psi(i))
+      fac2 = fac2 / np.cos(psi[i])
                   
       tmpIntegrand = fac1 * fac2 / np.abs(ddphidtheta[i]) * rate[i]
 
@@ -276,11 +285,15 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
 # it means "no physically plausible solution can be found"
 def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
   solved =  False 
-  theta = -555.0
+  theta = np.array([-555.0, -555.0])
   dphi_is_large =  np.array([0,0], dtype = bool) 
-  deltat = np.array([0,0]) 
+  deltat = np.array([0.0,0.0]) 
+  r2d = np.array([0.0,0.0])
+  rm2d = np.array([0.0,0.0])
+  shift = np.array([0.0,0.0])
                           
-  r = r0 / rm0 ; rmoon = rm0 / rm0; a = a0 / rm0      				
+  r = r0 / rm0 ; rmoon = rm0 / rm0; 
+  a = float(a0 / rm0)      				
   # define x-axis in the same direction as r-vector
   r2d[0] = r ; r2d[1] = 0.0    			
   
@@ -293,8 +306,10 @@ def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
   
   # (x(1),y(1)) and (x(2),y(2)) are coordinates
   # of 2 possible position of the hyperbola's second focus
+  x = np.array([0.0,0.0])
+  y = np.array([0.0,0.0])
   x,y = help.circle_intersection(rm2d[0], rm2d[1], 2.0 * a + rmoon, r2d[0], 2.0 * a + r)  	
-  ee = np.array([0,0]) 
+  ee = np.array([0.0,0.0]) 
     
   for i  in range(0, 2):
     # shift is coordinates of the ellipse's center
@@ -322,16 +337,20 @@ def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
     # the hyperbola solves our problem only if r and rm lay
     # on the same branch and the trajectory doesn't intersect
     # the moon's surface (the particle doesn't pass the pericenter
-    if r2d[0] / rm2d[0] > 0.0 and r2d[1] / rm2d[1] > 0.0:  				
-      c = 0.50 * np.sqrt(x[i]**2 + y[i]**2)  					
-      b = np.sqrt(c**2 - a**2)   						
+    if (r2d[0] / rm2d[0] > 0.0, r2d[1] / rm2d[1] > 0.0):  				
+      c = float(0.50 * np.sqrt(x[i]**2 + y[i]**2))  					
+      b = float(np.sqrt(c**2 - a**2))   						
       ee[i] = c / a
-      one_plus_e = 10 + ee[i]
-      one_minus_e = 10 - ee[i]
+      one_plus_e = 1.0 + ee[i]
+      one_minus_e = 1.0 - ee[i]
       one_minus_e2 = one_plus_e * one_minus_e
       aux = -a * one_minus_e2
-      cosf1 = (aux - 10) / ee[i]
+      cosf1 = float((aux - 1.0) / ee[i])
+      #print("aux is " + str(aux))
+      #print("ee is " + str(ee))
+      #print("cosf1 is " + str(cosf1))
       f1 = np.arccos(cosf1)
+      
       f2 = f1 + phi
       
       theta[i] = const.halfpi - np.arctan((ee[i] * np.sin(f2)) / (1.0 + ee[i] * np.cos(f2)))
@@ -348,10 +367,10 @@ def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
         deltat[i] = 0.0
       # endif
 
-      if solved != 1 and  theta[i] > 0.0 :
+      if (solved != 1,  theta[i] > 0.0) :
         f = open("PyPlumes/results/theta_geometry_output.txt","a")
         f.write("\n")
-        f.write("\nTheta was found with an insufficient accuracy of" + str(discr) + "from the geometry of hyperbola\n")
+        f.write("\nTheta was found with an insufficient accuracy of " + str(discr) + " from the geometry of hyperbola\n")
         f.write("for r = " + str(r0) + "\n")
         f.write("dphi = " + str(phi) + "\n")
         f.write("the obtained value of eccentricity = " + str(ee[i]) + "\n")
@@ -366,8 +385,8 @@ def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
       # endif
         
     else:
-      theta[i] = -4440
-      ee[i] = -4440
+      theta[i] = -444.0
+      ee[i] = -444.0
       dphi_is_large[i] =  0 
     # endif
     # we have changed the vectors r and rmoon we started from
@@ -406,7 +425,7 @@ def theta_geometry_ellipse(r0, rm0, vv, phi, a0, timeDependence):
   r = r0 / rm0  ; rmoon = rm0 / rm0
   a = a0 / rm0
   # define x-axis in the same direction as rmoonvector
-  r2d = np.array([0,0])
+  r2d = np.array([0.0,0.0])
   r2d[0] = r; r2d[1] = 0.0    			
   # we don't have enough information to define the sign of r
   # vector in the right-handed coordinate system
@@ -424,8 +443,8 @@ def theta_geometry_ellipse(r0, rm0, vv, phi, a0, timeDependence):
   x, y = help.circle_intersection(rm2d[0], rm2d[1], 2.0 * a - rmoon, r2d[0], 2.0 * a - r) 
   # distance between the foci of the ellipse
   cc = np.sqrt(x**2 + y**2)
-  ee = np.array([0,0])
-  deltat = np.array([0,0])  
+  ee = np.array([0.0,0.0])
+  deltat = np.array([0.0,0.0])  
   
   for i  in range(0, 2):
     if cc[i] == cc[i]  :
@@ -503,7 +522,7 @@ def theta_geometry_ellipse(r0, rm0, vv, phi, a0, timeDependence):
       if( solved != 1  and  theta[i] > 0.0) :
         f = open("PyPlumes/results/theta_geometry_output.txt","a")
         f.write("\n")
-        f.write("\nTheta was found with an insufficient accuracy of" + str(discr) + "from the geometry of ellipse\n")
+        f.write("\nTheta was found with an insufficient accuracy of " + str(discr) + " from the geometry of ellipse\n")
         f.write("for r = " + str(r0) + "\n")
         f.write("rt = " + str(rtest * rm0) + "\n")
         f.write("f1 = " + str(f1) + "\n") 
@@ -561,10 +580,10 @@ def control(theta, ee, phi, vv, r0, rm0, dphi_is_large):
   eps = 1 * (10**-4)
 
 #  eccentricity (eq 31)
-  ee1 = np.sqrt(1.0 + 2.0 * Ekep * (hh / const.gm) * (hh / const.gm))
+  ee1 = float(np.sqrt(1.0 + 2.0 * Ekep * (hh / const.gm) * (hh / const.gm)))
   if(np.abs(ee1 - ee) > eps) :
     f = open("PyPlumes/results/theta_geometry_output.txt","a")
-    f.write("\neccentricity is incorrect:" + str(ee) + "instead of " + str(ee1) + "\n")
+    f.write("\neccentricity is incorrect: " + str(ee) + " instead of " + str(ee1) + "\n")
     f.close
     # endif
 

@@ -25,18 +25,20 @@ density = np.zeros([nt,2])
 tmp_res = np.zeros([nt,2])
 
 var.source = input.read_sources_params(fname,Ns)
-ttab, var.point = input.read_Cassini_E2(nt)
+#ttab, var.point = input.read_Cassini_E2(nt)
 
 #print (var.source.r)
 
 for i in range (0, Ns):
     for x in range (0,nt): 
-        var.point.r = var.point.r[x]; #var.point.alpha = var.point.alpha[x]
+        ttab, var.point = input.read_Cassini_E2(nt)
+       
+        var.point.r = var.point.r[x]; 
+        var.point.alpha = var.point.alpha[x]
         var.point.beta = var.point.beta[x]; var.point.r_scaled = var.point.r_scaled[x]
         var.point.rvector = var.point.rvector[:,x]
-        
-        #print("rvector is " + str(var.point.rvector))
-        #print("r is " + str(var.point.r))
+        #print("r is  " + str(var.point.r))
+
         #var.source = var.source[i]
         tmp_res[x,:] = integrator.DUDI(tnow)
     density = density + tmp_res

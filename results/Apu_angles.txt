@@ -1,0 +1,3326 @@
+
+Apu << sin(psi) = [1.74553908] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.60933484] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.32817591] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.86701089] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.19703726] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.19364416] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.43763475] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.67179244] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.10544749] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.26675716] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.41481602] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.29669519] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.43600565] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.33306323] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.29299243] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.28611573] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.29699811] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.31663482] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.33962209] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.36276853] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.3842742] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.40320214] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.41913076] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.4319276] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.44160561] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.44823474] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.45189063] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.03459733] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.38288297] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.94228958] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.23293687] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.47566058] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.70996369] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14007407] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.29991043] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.29982343] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.40290978] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.30350632] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.26438437] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.25733777] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.26754177] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.28629841] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.30836867] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.33064882] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.35138232] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.36965032] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.38503546] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.39740264] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.40675952] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.4131705] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.41670667] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.39223542] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.05339271] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.09648167] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.43815196] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.03578368] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.01794059] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.27186832] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.51361418] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.74844797] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.17424762] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.33272504] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.30280539] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.36994912] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.27398844] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.23579001] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.22856856] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.23809626] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.25597726] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.27713535] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.29855366] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.3185188] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.33612993] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.35097399] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.36291334] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.37195039] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.37814406] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.38156099] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.50660072] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.12864523] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.2739628] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.15806092] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.49438492] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.05877469] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.31049328] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.5515721] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.78738682] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20799597] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.36522883] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.00002451] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.3056383] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.33712268] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.24450978] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20720966] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.1998085] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20866214] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.22567208] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.24592299] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.26648406] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.28568474] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.30264218] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.31694765] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.32846102] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.33717959] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.34315684] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.346455] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20628067] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.34669066] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.22100317] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.04708732] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.55338967] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.01722532] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.09986821] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.34964506] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.59039685] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.07366548] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.24199805] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.01631672] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.30823806] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.30391425] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.21463535] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.1782412] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.17066659] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.17884873] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.19498728] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.21432889] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.23402967] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.25246253] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.26876301] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.28252692] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.29361183] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.30200998] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.30776945] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.31094807] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.28420134] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.42091291] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.28312304] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.10244492] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.61356931] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.06500443] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.13964536] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.38783614] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.62865379] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.10820819] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.27497291] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.03207239] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.31075849] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.27135879] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.18523953] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14969332] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14192972] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14944296] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.16472037] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.18316551] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.2020189] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.21969567] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.23534924] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.24857987] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.25924283] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.26732538] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.27287033] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.27593121] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.36596292] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.50064737] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.34630755] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.1574853] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.67752487] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.11225703] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.17898654] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.42591856] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.66724313] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14228107] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.30761037] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.04753356] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.31312055] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.2389348] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.15588377] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.12116072] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.11320366] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.12005075] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.13447215] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.15202633] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.17003737] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.18696235] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20197251] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.21467259] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.22491565] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.23268409] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.2380155] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.24095917] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.45552545] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.59188264] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.41139063] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.21245752] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.74792759] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.21795208] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.46397567] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.70632727] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.17591501] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.06269857] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.31532085] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20664141] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.12656841] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.09264391] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.08448909] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.09067295] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.10424368] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.1209126] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.13808652] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.15426415] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.1686345] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.18080685] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.19063216] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.19808801] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20320689] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20603388] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.39007356] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.56538097] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.72500074] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.47971579] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.26765982] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.83147722] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.00242799] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.25660637] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.50210517] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.03503306] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20914146] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.07756548] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.31735579] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.17447783] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.09729386] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.06414348] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.05578675] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.06131053] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.07403613] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.08982569] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.10616789] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.12160277] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.13533704] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14698458] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.15639433] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.16353919] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.16844659] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.17115746] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.32347084] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.97077017] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.04284746] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.2950197] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.54042437] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.06956145] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.241993] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.09213207] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.31922157] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14244333] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.06806059] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.0356601] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.02709749] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.03196455] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.04385079] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.05876712] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.07428319] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.08898007] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.10208212] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.11320788] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.12220435] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.12903986] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.13373687] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.13633221] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.5051588] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.38040359] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.08273335] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.33327066] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.57907777] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.10359546] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.10639581] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.32091418] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.11053721] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.03886912] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.00719453] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.00263619] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.01368909] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.02773853] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.04243428] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.05639808] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.06887191] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.07947902] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.08806459] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.09459246] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.09908019] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.10156061] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.04647812] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.43920828] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.12215305] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.3714493] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.61824847] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.13716964] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.21861446] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.07875888] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.00972009] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.0106232] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.02385903] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.03570879] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.04580049] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.05397763] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.06019962] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.06447925] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.06684538] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.10902706] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.50109472] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.03185996] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.16117753] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.40966157] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.65817612] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.17031945] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.17988051] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.04710782] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.00259534] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.01217503] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.01994628] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.02586424] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.02993699] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.03218947] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.22126353] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.0265128] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.22836253] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.17215259] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.05456464] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.56830855] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.1998835] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.44803548] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.02630819] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14159386] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.01558359] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.34568629] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.10500133] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.30594597] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.23665468] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.11016845] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.64616624] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.23835615] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.48673035] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.06034324] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.10374181] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.18679149] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.39299167] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.30379285] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.16603431] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.75922825] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.02568932] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.27669286] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.52595099] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.09389035] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.06631235] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.27615191] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.51175148] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.37589458] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.22266554] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.0651907] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.31500831] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.56597055] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.12698978] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.00054177] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.02929407] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.38818551] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.28078592] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.10427525] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.35344186] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.00890353] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.34155252] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14303619] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.39216871] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.01398218] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.01700205] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.40710993] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.18157947] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.43141743] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.04752033] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.02483083] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.02285844] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.4807591] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.21925973] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.47067734] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.03238912] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.0740881] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.08765256] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.02464443] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.58886574] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.00918591] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.25776574] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.01094903] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.03966617] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.15233829] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.15484788] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.08144771] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.04831966] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.29651937] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.0466507] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.24156734] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.2270929] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.13945415] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.0871309] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.33577539] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.05333359] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14770929] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.05900664] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.30940613] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.19856386] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.1249858] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.37506722] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.15590828] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.26363758] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.16358974] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.33751429] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20160367] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.4693603] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.24086013] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.03310494] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.28017443] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.03435978] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.01632503] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.07182992] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.32177461] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.04100307] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.10779449] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.07586279] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.10989323] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14486558] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20195174] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14062792] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14837368] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.21950305] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.18772295] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.22953806] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.02213579] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.05984388] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.09926833] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.02835247] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.04243785] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14058631] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.01534067] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.00612061] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.0128032] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.01789707] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.02141235] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.0233615] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.13059079] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14049354] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14848145] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.15456278] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.15875563] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.16107912] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.52099714] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.53272683] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.54164066] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.5477783] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.55117665] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.65918867] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.66931332] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.67627737] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.68013072] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.79737516] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.80522217] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.8095612] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.92581877] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.93460087] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.93945379] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.06427865] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.06967067] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.03984365] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.04655228] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.05347656] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.06011188] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.06604648] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.07101014] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.07488355] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.07767864] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.07950396] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.08052698] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.08094094] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.08093941] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.08069907] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.08036928] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.19399738] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.19995027] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.12720443] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.13592655] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.14575013] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.15599278] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.16598211] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.17516204] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.1831534] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.18976614] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.19497567] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.19888072] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20165732] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20351801] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20468048] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20534597] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20568598] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.32431111] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.33084658] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.20895327] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.2183987] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.23006881] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.24323356] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.25702723] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.27059755] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.28323431] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.29444286] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.30395905] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.31172113] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.31781932] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.32244061] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.32581975] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.32820141] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.32981398] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.33085328] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.45445628] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.46159093] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.30783043] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.32266122] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.33939625] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.35697423] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.3743515] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.3906545] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.40526685] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.41784731] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.42829657] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.43669787] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.44325172] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.44821809] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.45187158] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.45447038] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.45623684] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.58513023] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.5928817] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.39530792] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.41350665] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.43403] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.45561092] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.47700492] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.49716731] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.51535487] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.53114677] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.54440613] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.55521069] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.563777] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.57039304] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.57536612] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.57898668] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.58150556] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.71572979] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.72411161] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.50295539] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.52748945] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.55329341] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.57891364] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.60312728] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.6250595] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.64420781] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.66039778] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.67370342] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.68435988] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.69268608] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.69902482] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.70370124] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.70699674] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.84683773] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.85586449] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.59075492] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.619508] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.6497367] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.67977258] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.70820949] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.73403747] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.75667086] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.77589809] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.79179112] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.80460613] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.81469563] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.82244045] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.82820266] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.83229599] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.9777493] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.98743133] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.67736251] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.71055419] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.7454175] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.78006472] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.81290189] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.8427806] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.86903067] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.89140392] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.90997208] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.92501495] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.93692142] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.94611301] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.95299101] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.95790337] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.10927837] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.1196285] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.80016205] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.83984238] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.8792676] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.9166538] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.9507124] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.98068817] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.00629705] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.02761235] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.04493976] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.05870696] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.06937842] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.07739661] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.0831452] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.24034107] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.25136635] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.88923366] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.93394413] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.97834249] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.02045244] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.05884297] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.09267294] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.12162323] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.14577068] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.16544954] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.18112909] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.19331943] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.20250647] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.20911151] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.37262988] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.38434422] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [1.97680293] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.02670574] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.07622014] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.12317869] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.16600797] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.20378132] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.23614567] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.26318313] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.28525863] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.30288519] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.31662043] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.32699539] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.48149783] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.50408211] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.51648928] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.06297013] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.11822141] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.17298707] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.22491112] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.27227852] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.31407775] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.34992302] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.37990352] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.40441687] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.42402188] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.43932555] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.45090558] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.6109386] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.63479828] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.64790174] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.14938709] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.21022178] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.27044932] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.32752578] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.37959329] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.4255551] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.46499367] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.49800747] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.52502966] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.54666785] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.56358128] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.57639676] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.74279997] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.76796831] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.781786] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.30115178] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.36697057] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.42930942] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.48616965] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.53637043] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.57946394] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.61555969] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.6451284] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.66882842] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.68737297] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.70143944] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.87407417] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.90055739] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.91509251] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.39108093] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.46261449] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.53031967] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.59205956] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.64657072] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.69337653] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.73259936] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.76474939] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.7905376] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.81073285] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.82606449] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.00482588] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.03262976] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.0478853] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.48007294] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.55743955] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.63060953] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.69731094] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.75619941] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.80677111] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.84916302] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.88392664] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.9118274] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.93369138] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.95030122] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.13511134] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.16424132] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.18022006] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.5681861] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.6514993] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.73022763] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.80196786] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.86529658] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.91968436] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.96528456] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.00269182] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.03272771] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.0562771] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.07417713] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.26497959] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.29544073] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.31214528] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.6571331] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.74660074] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.83106815] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.90800254] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.97590212] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.03421323] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.08310781] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.12322646] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.1554498] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.18072416] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.19994351] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.39753111] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.4293563] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.44680445] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.74364516] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.8392769] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.92947928] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.01159729] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.08405444] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.14627486] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.19845031] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.24126801] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.27566804] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.30265837] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.32318988] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.52668426] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.55985009] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.57802892] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.83108573] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.93308765] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.02920286] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.11665692] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.1937997] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.26003457] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.31557531] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.36115854] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.39778661] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.42653177] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.44840407] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.65858351] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.6931227] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.7120499] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [2.91783522] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.02631124] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.12842176] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.22127875] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.303161] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.37345291] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.43239201] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.48076593] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.51964087] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.5501547] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [3.57337769] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.7902003] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.82611721] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
+
+Apu << sin(psi) = [4.84579504] corrections applied
+
+the derivative d_Delta_phi/d_theta was obtained numerically because the analytical expression contains numerically difficult parts
