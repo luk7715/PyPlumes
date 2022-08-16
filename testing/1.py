@@ -3,7 +3,7 @@ import pandas as pd
 import const
 import variables as var 
 import gu
-import help 
+import PyPlumes.ultilities as ultilities 
 
 # input the parameters of the sources from the file with the name
 # stored in the variable fname
@@ -54,26 +54,26 @@ def jet_direction(betaM, zeta, eta, rrM):
   rtmp = rrM / const.rm
   tmpang = 3.0 * const.halfpi-betaM
   if(zeta != 0.0): 
-    xout, yout, zout = help.eulrot(0.0, 0.0, tmpang, rtmp[0], rtmp[1], rtmp[2], 0)
+    xout, yout, zout = ultilities.eulrot(0.0, 0.0, tmpang, rtmp[0], rtmp[1], rtmp[2], 0)
     rtmp[0] = xout ; rtmp[1] = yout ; rtmp[2] = zout
     
     xj[0] = 0.0
     xj[1] = 1.0 * np.sign(rtmp[2]) * np.abs(rtmp[2])
     xj[2] = -1.0 * np.sign(rtmp[1]) * np.abs(rtmp[1])
-    xj = xj/help.norma3d(xj)
+    xj = xj/ultilities.norma3d(xj)
 
-    yj = help.vector_product(rtmp,xj)
+    yj = ultilities.vector_product(rtmp,xj)
         
     jetdir = np.sin(zeta) * np.cos(eta) * xj - np.sin(zeta) * np.sin(eta) * yj \
         + np.cos(zeta) * rtmp
 
-    jetdir = jetdir / help.norma3d(jetdir)
+    jetdir = jetdir / ultilities.norma3d(jetdir)
     
-    xout, yout, zout = help.eulrot(0.0, 0.0, tmpang, rtmp[0], rtmp[1], rtmp[2],1)
+    xout, yout, zout = ultilities.eulrot(0.0, 0.0, tmpang, rtmp[0], rtmp[1], rtmp[2],1)
 
     rtmp[0]= xout ; rtmp[1] = yout ; rtmp[2] = zout
     
-    xout, yout, zout = help.eulrot(0.0, 0.0, tmpang, jetdir[0], jetdir[1], jetdir[2], 1)
+    xout, yout, zout = ultilities.eulrot(0.0, 0.0, tmpang, jetdir[0], jetdir[1], jetdir[2], 1)
 
     jetdir[0] = xout ; jetdir[1] = yout ; jetdir[2] = zout
 

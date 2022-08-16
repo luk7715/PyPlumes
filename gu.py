@@ -15,7 +15,7 @@
 # E-mail: vveyzaa@gmail.com
 
 import numpy as np
-import help
+import ultilities as ultilities
 import const 
 import variables as var
 import distributions as distf
@@ -37,7 +37,7 @@ def Gu_integral(sd):
   low = const.rmin
   Si = np.zeros(const.GRN)
   
-  Xi, Wi = help.GaussLegendreQuadra(const.order_R)
+  Xi, Wi = ultilities.GaussLegendreQuadra(const.order_R)
   for i  in range(0, const.GRN):
     ldif = up - low
     ldif = ldif * 0.50
@@ -77,7 +77,7 @@ def Gu_integral(sd):
 # resuls is in kg
 def mass_production(sd, r1, r2):
   mass = 0.0
-  Xi , Wi = help.GaussLegendreQuadra(const.order_R)
+  Xi , Wi = ultilities.GaussLegendreQuadra(const.order_R)
   ldif = r2 - r1
   ldif = ldif * 0.50
   lsum = r2 + r1

@@ -17,7 +17,7 @@ import output
 # number of sources
 Ns = 1
 # number of points on the SC trajectory for which the number density is to be calculated
-nt = 100
+nt = 2
 tnow = 0.0
 bg = 0.01
 fname = "PyPlumes/input_data_files/Enceladus_jet.dat"
@@ -32,12 +32,14 @@ var.source = input.read_sources_params(fname,Ns)
 for i in range (0, Ns):
     for x in range (0,nt): 
         ttab, var.point = input.read_Cassini_E2(nt)
+       # print(var.point.rvector)
+
        
         var.point.r = var.point.r[x]; 
         var.point.alpha = var.point.alpha[x]
         var.point.beta = var.point.beta[x]; var.point.r_scaled = var.point.r_scaled[x]
-        var.point.rvector = var.point.rvector[:,x]
-        #print("r is  " + str(var.point.r))
+        var.point.rvector = var.point.rvector[x,:]
+       # print(var.point.rvector)
 
         #var.source = var.source[i]
         tmp_res[x,:] = integrator.DUDI(tnow)

@@ -8,7 +8,7 @@ currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentfram
 parentdir = os.path.dirname(currentdir)
 sys.path.insert(0, parentdir)
 
-import help 
+import PyPlumes.ultilities as ultilities 
 import const as c 
 import variables as var
 import twobody as tb
@@ -40,7 +40,7 @@ A[1] = ([1,3,10])
 A[2] = ([2,1,1])
 B[1] = np.dot(t1, M1)
 
-Ainv = help.invert_matrix3(A)
+Ainv = ultilities.invert_matrix3(A)
 #print (Ainv)
 
 ####need to test about file locations 

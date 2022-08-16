@@ -15,7 +15,7 @@
 # Compute various quantities needed for evaluation of the integrand
 
 import numpy as np
-import help 
+import ultilities as ultilities 
 import const
 import variables as var
 import distributions as distf
@@ -97,8 +97,8 @@ def Apu_u_angles_ddphidtheta(v,theta,e,dbeta,dphi,u,dphi_is_large):
     coslambdaM = - coslambdaM
   # endif
 
-  lambdaM = help.myatan1(coslambdaM, sinlambdaM)
-  var_lambda = help.myatan1(coslambda, sinlambda)
+  lambdaM = ultilities.myatan1(coslambdaM, sinlambdaM)
+  var_lambda = ultilities.myatan1(coslambda, sinlambda)
   
   wpsi = np.arccos(np.cos(psi) * np.cos(source_zeta)+ \
     np.cos(lambdaM - source_eta) * np.sin(psi) * np.sin(source_zeta))
@@ -173,18 +173,27 @@ def deltaphi(theta, wrr, wvv):
 def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
  
   semi_major_axis = (2.0 / var.point.r - velocity**2 / const.gm)**(-1)
-  theta = -999.0
+  theta = np.array([-999.0,-999.0])
+  ee = np.array([0.0,0.0])
+  deltat = np.array([0.0,0.0])
+  dphi_is_large =  np.array([0,0], dtype = bool) 
+
+  if var.source.production_fun > 0: 
+    timeDependence = True
+  else: timeDependence = False
+  
+
   # find solutions for theta
 
   if(semi_major_axis < 0.0  or  semi_major_axis >= amin) :
     if(semi_major_axis > 0.0) :
       ee, theta, deltat, dphi_is_large = theta_geometry_ellipse(var.point.r, var.source.r, velocity,\
-         dphi, semi_major_axis, var.source.production_fun > 0)
+         dphi, semi_major_axis, timeDependence)
     else:
       ee, theta, deltat, dphi_is_large = theta_geometry_hyperbola(var.point.r, var.source.r, velocity,\
-         dphi, np.abs(semi_major_axis),\
-        var.source.production_fun > 0)
-  #print(ee)
+         dphi, np.abs(semi_major_axis), timeDependence)
+ # print(semi_major_axis < 0.0 )
+ # print(ee)
 #~ 			write(*,*) 'intergand << theta', theta
 
   uu = np.sqrt(const.vesc * const.vesc + 2.0 * (velocity * velocity / 2.0 - const.gm / var.point.r))
@@ -198,7 +207,7 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
     if(uu / var.source.ud_umax > var.source.ui[const.GRN-1]) :
       fac1 = velocity * var.source.Gu_precalc[const.GRN-1] / uu / uu
     else:
-      fac1 = help.LiNTERPOL(const.GRN, var.source.Gu_precalc, var.source.ui, uu) 
+      fac1 = ultilities.LiNTERPOL(const.GRN, var.source.Gu_precalc, var.source.ui, uu) 
       fac1 = velocity * fac1 / uu / uu
     # endif
   # endif
@@ -211,7 +220,7 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
   ddphidtheta = np.array([0.0,0.0])
 
   for i  in range(0, 1):
-    if(var.source.production_fun > 0) :
+    if(timeDependence) :
       rate[i] = distf.production_rate(tnow - deltat[i], var.source.production_rate, \
                                                     var.source.production_fun)
     else:
@@ -308,7 +317,7 @@ def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
   # of 2 possible position of the hyperbola's second focus
   x = np.array([0.0,0.0])
   y = np.array([0.0,0.0])
-  x,y = help.circle_intersection(rm2d[0], rm2d[1], 2.0 * a + rmoon, r2d[0], 2.0 * a + r)  	
+  x,y = ultilities.circle_intersection(rm2d[0], rm2d[1], 2.0 * a + rmoon, r2d[0], 2.0 * a + r)  	
   ee = np.array([0.0,0.0]) 
     
   for i  in range(0, 2):
@@ -325,21 +334,23 @@ def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
     angle = np.arctan(y[i] / x[i])
     # vector r in the CS with its center at the center of the ellipse
     # and the x-axis along major axis of the ellipse									
-    r2d = help.rot2d(r2d, -angle)  
+    r2d = ultilities.rot2d(r2d, -angle)  
     # vector rm in the CS with its center at the center of the ellipse
     # and the x-axis along major axis of the ellipse								
-    rm2d = help.rot2d(rm2d, -angle)  
+    rm2d = ultilities.rot2d(rm2d, -angle)  
     # vector shift in the CS with its center at the center of the ellipse
     # and the x-axis along major axis of the ellipse							
-    shift = help.rot2d(shift, -angle)
+    shift = ultilities.rot2d(shift, -angle)
 
 
     # the hyperbola solves our problem only if r and rm lay
     # on the same branch and the trajectory doesn't intersect
     # the moon's surface (the particle doesn't pass the pericenter
-    if (r2d[0] / rm2d[0] > 0.0, r2d[1] / rm2d[1] > 0.0):  				
-      c = float(0.50 * np.sqrt(x[i]**2 + y[i]**2))  					
-      b = float(np.sqrt(c**2 - a**2))   						
+    if (r2d[0] / rm2d[0] > 0.0 and r2d[1] / rm2d[1] > 0.0):  				
+      c = float(0.50 * np.sqrt(x[i]**2 + y[i]**2))  
+      #print(c**2)
+      #print(a**2)
+      b = float(np.sqrt(np.abs(c**2 - a**2)))   						
       ee[i] = c / a
       one_plus_e = 1.0 + ee[i]
       one_minus_e = 1.0 - ee[i]
@@ -367,7 +378,7 @@ def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
         deltat[i] = 0.0
       # endif
 
-      if (solved != 1,  theta[i] > 0.0) :
+      if (solved != 1 and  theta[i] > 0.0) :
         f = open("PyPlumes/results/theta_geometry_output.txt","a")
         f.write("\n")
         f.write("\nTheta was found with an insufficient accuracy of " + str(discr) + " from the geometry of hyperbola\n")
@@ -440,7 +451,7 @@ def theta_geometry_ellipse(r0, rm0, vv, phi, a0, timeDependence):
   
   # (x(1),y(1)) and (x(2),y(2)) are coordinates of 2 possible
   # position of the ellsipse's second focus
-  x, y = help.circle_intersection(rm2d[0], rm2d[1], 2.0 * a - rmoon, r2d[0], 2.0 * a - r) 
+  x, y = ultilities.circle_intersection(rm2d[0], rm2d[1], 2.0 * a - rmoon, r2d[0], 2.0 * a - r) 
   # distance between the foci of the ellipse
   cc = np.sqrt(x**2 + y**2)
   ee = np.array([0.0,0.0])
@@ -501,7 +512,7 @@ def theta_geometry_ellipse(r0, rm0, vv, phi, a0, timeDependence):
         solved, discr = control(theta[i], ee[i], phi, vv, r0, rm0, \
               dphi_is_large[i])
       
-        if( timeDependence == 1) :
+        if( timeDependence == True) :
           ean = 2.0 * np.arctan(np.tan(f2/2.0) \
               * np.sqrt(one_minus_e / one_plus_e))
           if(ean < 0.0):

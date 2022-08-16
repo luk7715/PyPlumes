@@ -3,7 +3,7 @@ import pandas as pd
 import const
 import variables as var 
 import gu
-import help 
+import ultilities as ultilities 
 
 
 
@@ -24,10 +24,11 @@ def read_spacecraft_coordinates(fname,nt):
   var.point.alpha = const.halfpi - var.point.alpha 
   var.point.beta = var.point.beta *const.deg2rad
 
-  var.point.rvector = np.zeros([3,nt])
-  var.point.rvector[0] = var.point.r * np.sin(var.point.alpha) * np.cos(var.point.beta)
-  var.point.rvector[1] = var.point.r * np.sin(var.point.alpha) * np.sin(var.point.beta)
-  var.point.rvector[2] = var.point.r * np.cos(var.point.alpha) 
+  var.point.rvector = np.zeros([nt,3])
+  for i in range (0,nt):
+    var.point.rvector[i,0] = var.point.r[i] * np.sin(var.point.alpha[i]) * np.cos(var.point.beta[i])
+    var.point.rvector[i,1] = var.point.r[i] * np.sin(var.point.alpha[i]) * np.sin(var.point.beta[i])
+    var.point.rvector[i,2] = var.point.r[i] * np.cos(var.point.alpha[i]) 
 
   var.point.r_scaled = var.point.r/const.rm
   var.point.compute = True 
@@ -39,11 +40,11 @@ def read_spacecraft_coordinates(fname,nt):
 ##Specifically for read in the Cassini E2 flyby data file based on the template above
 #the file was prepared in advance using SPICE software
 def read_Cassini_E2(nt):
-  data = np.loadtxt("PyPlumes/input_data_files/Cassini_E2_flyby.dat", max_rows= nt)
+  data = np.loadtxt("PyPlumes/input_data_files/Cassini_flyby_test.dat", max_rows= nt)
   data_in_arrays = data
   #print(data_in_arrays)
 
-  ttab = np.zeros([1,nt])
+  ttab = np.zeros([nt,1])
   ttab = data_in_arrays[:,0]
 
   var.point.r = data_in_arrays[:,1] ; var.point.alpha = data_in_arrays[:,2]
@@ -52,11 +53,14 @@ def read_Cassini_E2(nt):
   var.point.alpha = var.point.alpha * const.deg2rad
   var.point.alpha = const.halfpi - var.point.alpha 
   var.point.beta = var.point.beta *const.deg2rad
+  #print("test")
+  #print(var.point.r[0] * np.sin(var.point.alpha[0]) * np.cos(var.point.beta[0]))
 
-  var.point.rvector = np.zeros([3,nt])
-  var.point.rvector[0] = var.point.r * np.sin(var.point.alpha) * np.cos(var.point.beta)
-  var.point.rvector[1] = var.point.r * np.sin(var.point.alpha) * np.sin(var.point.beta)
-  var.point.rvector[2] = var.point.r * np.cos(var.point.alpha) 
+  var.point.rvector = np.zeros([nt,3])
+  for i in range(0, nt):
+   var.point.rvector[i,0] = var.point.r[i] * np.sin(var.point.alpha[i]) * np.cos(var.point.beta[i])
+   var.point.rvector[i,1] = var.point.r[i] * np.sin(var.point.alpha[i]) * np.sin(var.point.beta[i])
+   var.point.rvector[i,2] = var.point.r[i] * np.cos(var.point.alpha[i]) 
 
   var.point.r_scaled = var.point.r/const.rm
   var.point.compute = True 
@@ -96,7 +100,7 @@ def read_sources_params(fname, Ns):
   var.source.zeta = var.source.zeta *const.deg2rad
   var.source.eta = var.source.eta * const.deg2rad
 
-  var.source.rrM = np.array([0,0,0])
+  var.source.rrM = np.array([0.0,0.0,0.0])
   var.source.rrM[0] = const.rm *np.sin(var.source.alphaM) * np.cos(var.source.betaM)
   var.source.rrM[1] = const.rm *np.sin(var.source.alphaM) * np.sin(var.source.betaM)
   var.source.rrM[2] = const.rm *np.cos(var.source.alphaM)
@@ -125,28 +129,29 @@ def jet_direction(betaM, zeta, eta, rrM):
   rtmp = rrM / const.rm
   tmpang = 3.0 * const.halfpi-betaM
   xj = np.array([0.0,0.0,0.0])
+  jetdir = np.array([0.0,0.0,0.0])
 
   if(zeta != 0.0): 
-    xout, yout, zout = help.eulrot(0.0, 0.0, tmpang, rtmp[0], rtmp[1], rtmp[2], 0)
+    xout, yout, zout = ultilities.eulrot(0.0, 0.0, tmpang, rtmp[0], rtmp[1], rtmp[2], 0)
     rtmp[0] = xout ; rtmp[1] = yout ; rtmp[2] = zout
     
     xj[0] = 0.0
     xj[1] = 1.0 * np.sign(rtmp[2]) * np.abs(rtmp[2])
     xj[2] = -1.0 * np.sign(rtmp[1]) * np.abs(rtmp[1])
-    xj = xj/help.norma3d(xj)
+    xj = xj/ultilities.norma3d(xj)
 
-    yj = help.vector_product(rtmp,xj)
+    yj = ultilities.vector_product(rtmp,xj)
         
     jetdir = np.sin(zeta) * np.cos(eta) * xj - np.sin(zeta) * np.sin(eta) * yj \
         + np.cos(zeta) * rtmp
 
-    jetdir = jetdir / help.norma3d(jetdir)
+    jetdir = jetdir / ultilities.norma3d(jetdir)
     
-    xout, yout, zout = help.eulrot(0.0, 0.0, tmpang, rtmp[0], rtmp[1], rtmp[2],1)
+    xout, yout, zout = ultilities.eulrot(0.0, 0.0, tmpang, rtmp[0], rtmp[1], rtmp[2],1)
 
     rtmp[0]= xout ; rtmp[1] = yout ; rtmp[2] = zout
     
-    xout, yout, zout = help.eulrot(0.0, 0.0, tmpang, jetdir[0], jetdir[1], jetdir[2], 1)
+    xout, yout, zout = ultilities.eulrot(0.0, 0.0, tmpang, jetdir[0], jetdir[1], jetdir[2], 1)
 
     jetdir[0] = xout ; jetdir[1] = yout ; jetdir[2] = zout
 

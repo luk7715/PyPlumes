@@ -17,7 +17,7 @@
 import numpy as np
 import const
 import variables as var
-import help
+import ultilities as ultilities
 import twobody as tb
 
 # change of veps is not recommended
@@ -45,18 +45,17 @@ def DUDI(tnow):
   #real xhy(order_v_hy), why(order_v_hy)
   #logical pole
   
-  dphi, dbeta, angle = help.ApuTrajectory() 
+  dphi, dbeta, angle = ultilities.ApuTrajectory() 
   v_limits = np.array([0.0,0.0])
   Nprestep = int(0)
 
   
   # escape velosity at distance rr
-  vc = np.sqrt(20 * const.gm / var.point.r)
+  vc = np.sqrt(2.0 * const.gm / var.point.r)
   
   amin = 0.0
-  amin = (var.point.r + var.source.r) / 4.0 \
-      + 0.50 * np.sqrt((var.point.r**2 + var.source.r**2) \
-      / 4.0 - var.point.r * var.source.r * np.cos(dphi) / 2.0)
+  amin = (var.point.r + var.source.r) / 4.0 + 0.50 * np.sqrt((var.point.r**2 + var.source.r**2)/ 4.0 \
+    - var.point.r * var.source.r * np.cos(dphi) / 2.0)
 
   amin2 = 0.0
   amin2 = (2.0 / var.source.r - var.source.ud_umin**2 / const.gm)**(-1)
@@ -79,7 +78,8 @@ def DUDI(tnow):
   #print(amin2)
 
   if amin > amin2:
-    pole = 1 
+    pole = bool(1)
+  else: pole = bool(0)
 
   if pole != True:
      vmin = vmin2
@@ -104,9 +104,9 @@ def DUDI(tnow):
       #print(Nprestep)
 
       for i  in range(1, Nprestep):
-        vi = (float(i-1) / float(Nprestep))**trpower * vinterval + v_limits[1]
+        vi = (float(i-1) / float(Nprestep))**trpower * vinterval + v_limits[0]
         f2 = tb.Integrand_number_density(vi, amin, dphi, dbeta, tnow)
-        density[0] = density[1] + (vi - viprev) * 0.50 * (f1 + f2)
+        density[0] = density[0] + (vi - viprev) * 0.50 * (f1 + f2)
         f1 = f2
         viprev = vi
       # enddo
@@ -116,10 +116,10 @@ def DUDI(tnow):
     
     if(vc > v_limits[1]) :  		
       v_limits[0] = v_limits[1]
-      v_limits[1] = min(vc, vmax)
+      v_limits[1] = np.minimum(vc, vmax)
       
     # the particles on the elliptic orbits 
-      xel,wel = help.GaussLegendreQuadra(const.order_v_el)
+      xel,wel = ultilities.GaussLegendreQuadra(const.order_v_el)
       ldif = v_limits[1] - v_limits[0]
       ldif = ldif * 0.50
       lsum = v_limits[1] + v_limits[0]
@@ -132,7 +132,7 @@ def DUDI(tnow):
       
     if(vc < vmax) :
     # the particles on the escaping trajectories
-      xhy ,why = help.GaussLegendreQuadra(const.order_v_hy)
+      xhy ,why = ultilities.GaussLegendreQuadra(const.order_v_hy)
       v_limits[0] = v_limits[1]
       v_limits[1] = vmax
       ldif = v_limits[1] - v_limits[0]
@@ -161,7 +161,7 @@ def estimate_N_steps_pole_integration(z, r, xi, isjet):
 
 
   if(isjet == 1) :
-    if(ximin < xi, xi < ximax) :
+    if(ximin < xi and xi < ximax) :
       if(r < 2.0) :
         Nprestep = 15 + 10 * int(z)
         

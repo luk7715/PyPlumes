@@ -216,12 +216,12 @@ def production_rate(t, gamma0, ratefun):
   match (ratefun):
     case 1:
       gammarate = 0.0
-      if(t < tmax  and  t >= 0.0):
+      if(t < tmax and  t >= 0.0):
         gammarate = gamma0
 
     case 2:
       gammarate = 0.0
-      tmax = 500
+      tmax = 5.2
       if(t > 0.0  and  t < 2.0 * tmax) :
         gammarate = gamma0 * (-t**2 + 2.0 * t * tmax) / tmax**2
       # endif
