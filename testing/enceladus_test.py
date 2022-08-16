@@ -17,7 +17,7 @@ import output
 # number of sources
 Ns = 1
 # number of points on the SC trajectory for which the number density is to be calculated
-nt = 2
+nt = 100
 tnow = 0.0
 bg = 0.01
 fname = "PyPlumes/input_data_files/Enceladus_jet.dat"

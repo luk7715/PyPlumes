@@ -40,7 +40,7 @@ def read_spacecraft_coordinates(fname,nt):
 ##Specifically for read in the Cassini E2 flyby data file based on the template above
 #the file was prepared in advance using SPICE software
 def read_Cassini_E2(nt):
-  data = np.loadtxt("PyPlumes/input_data_files/Cassini_flyby_test.dat", max_rows= nt)
+  data = np.loadtxt("PyPlumes/input_data_files/Cassini_E2_flyby.dat", max_rows= nt)
   data_in_arrays = data
   #print(data_in_arrays)
 
