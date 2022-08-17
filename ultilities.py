@@ -187,10 +187,10 @@ def myatan1(re0, im):
   myatan1 = np.arctan(im / re)
 
   if re < 0.0 :
-    myatan1 = myatan1 + np.pi
+    myatan1 = myatan1 + const.pi
 
   if (re > 0.0 and  im < 0.0 ):
-    myatan1 = myatan1 + 2*np.pi
+    myatan1 = myatan1 + const.twopi
   
   return myatan1 
       # # end def myatan1

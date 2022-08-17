@@ -39,7 +39,7 @@ def cassini_flyby_out(density, ttab, bg, nt):
   #real, intent(in) :: density(nt,2), ttab(nt), bg
   #integer i
   
-  f = open("PyPlumes/results/E2_profile.txt","a")
+  f = open("PyPlumes/results/E2_profile.dat","w")
   for i  in range(0, nt):
     densitysum = np.sum (density[i,:]) + bg  
     f.write(str(ttab[i]) + " " + str(densitysum) + "\n")

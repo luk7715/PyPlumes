@@ -39,13 +39,14 @@ def ejection_direction_distribution(distribution_shape, wpsi, psi, lambdaM, zeta
   omega5 = 0.08726646
   omega10 = 0.1745329
   omega45 = 0.7853982
-  fpsi = 0.0
+  fpsi = float(0.0)
+  Jpsi = float()
 
   match distribution_shape:
     case 1:
     # pseudo Gaussian distribution of polar angle, uniform distribution of azimuth
       if(psi < const.halfpi * 0.99  and  wpsi < const.halfpi * 0.99) :
-        fpsi = np.exp(-(wpsi-psimax0)**2 / 2.0 / omega5 / omega5)
+        fpsi = np.exp((-(wpsi-psimax0)**2) / 2.0 / omega5 / omega5)
         # this factor is normalization due to the fact that fpsi
         # domain is from 0 to pi/2 and not from -infinity to +infinity
         fpsi = fpsi / normconst1
@@ -82,14 +83,16 @@ def ejection_direction_distribution(distribution_shape, wpsi, psi, lambdaM, zeta
     # HERE IS THE PLACE FOR WRITING YOUR OWN PDF
      fpsi = 0.0
 
-    case default:
-      pass
+   
     
   if zeta != 0.0 :
     Jpsi = Jacobian_tilt(psi, lambdaM, zeta, eta)
     fpsi = fpsi * Jpsi
   # endif
+
   fpsi = fpsi * np.sin(wpsi)
+
+  #print("fpsi = "+ str(fpsi))
 
   return fpsi
     
@@ -139,7 +142,7 @@ def ejection_speed_distribution(u, R):
     case 1 :
       Rrel = R / Rc
       urel = u / var.ud.umax
-      fu = Rrel * (1.0 + Rrel) * (1.0 - urel)**(Rrel - 1.0) * urel / var.ud.umax
+      fu = Rrel * (1.0 + Rrel) *( (1.0 - urel)**(Rrel - 1.0) )* urel / var.ud.umax
     case 2:
       fu = 0.0
       if(u < var.ud.umax  and  u > var.ud.umin):
@@ -172,7 +175,7 @@ def size_distribution(R, sd, mom):
   match sd:
 
     case 1:
-      fR = np.exp(-(np.log(R) - mu)**2 / 2.0 / sigma**2) / R
+      fR = np.exp(-(np.log(R) - mu)**2 / 2.0 / (sigma**2)) / R
       C_size_distr = sigma * const.sqrtpi * np.sqrt(2.0)
 
     case 2:
@@ -197,7 +200,7 @@ def size_distribution(R, sd, mom):
       # HERE IS THE PLACE FOR WRITING YOUR OWN PDF
       fR = 0.0
   # endselect
-  fR =  R**mom * fR / C_size_distr
+  fR = ( R**mom )* fR / C_size_distr
 
   return fR
  # # end def size_distribution
@@ -221,9 +224,9 @@ def production_rate(t, gamma0, ratefun):
 
     case 2:
       gammarate = 0.0
-      tmax = 5.2
+      tmax = 500.00
       if(t > 0.0  and  t < 2.0 * tmax) :
-        gammarate = gamma0 * (-t**2 + 2.0 * t * tmax) / tmax**2
+        gammarate = gamma0 * (-t**2 + 2.0 * t * tmax) / (tmax**2)
       # endif
     case 3:
       # HERE IS THE PLACE TO WRITE YOUR OWN def FOR THE PRODUCTION RATE

@@ -141,7 +141,7 @@ def jet_direction(betaM, zeta, eta, rrM):
     xj = xj/ultilities.norma3d(xj)
 
     yj = ultilities.vector_product(rtmp,xj)
-        
+          
     jetdir = np.sin(zeta) * np.cos(eta) * xj - np.sin(zeta) * np.sin(eta) * yj \
         + np.cos(zeta) * rtmp
 

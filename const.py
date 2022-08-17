@@ -22,26 +22,27 @@ import os
 
 # fundamental constants and auxilary numbers
 pi = 3.1415926535897930
-halfpi = pi / 2
+halfpi = pi / 2.00
 sqrtpi = np.sqrt(pi)
-twopi = 2 * pi
-sqrt2 = np.sqrt(2)
-deg2rad = pi / 180
-rad2deg = 180 / pi
-gravity_constant = 6.674*(10**(-11.00))   		# m^3 / kg / s^2
+twopi = 2.00 * pi
+sqrt2 = np.sqrt(2.00)
+deg2rad = pi / 180.00
+rad2deg = 180.00 / pi
+gravity_constant = 6.674*(10**(-11))   		# m^3 / kg / s^2
   
 # parameters defining the moon
-moon_mass = 1.08022*(10**(20.00))  	# kg
+moon_mass = 1.08022*(10**(20))  	# kg
 gm = gravity_constant * moon_mass
 rm = 252*(10**3)  	# meters
-vesc = np.sqrt(gm * 20 / rm)
+vesc = float(np.sqrt((gm * 2.00) / rm))
+#print("vesc = " + str(vesc))
       	
 # other parameters defining the quantity of interest
     # density of the dust particles (if one wants to compute mass)
     # if the quantity which we want to compute is dust flux through
     # the surface parallel to the moon surface
     # parameter flux should be  True , if it is  False  : density is computed
-rho = 9200  	# kg/m^3 
+rho = 920.00  	# kg/m^3 
 flux =  False 
     
 # parameters of Gu def

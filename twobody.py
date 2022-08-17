@@ -29,6 +29,8 @@ def Apu_u_angles_ddphidtheta(v,theta,e,dbeta,dphi,u,dphi_is_large):
   point_r_scaled = var.point.r_scaled 
   source_alphaM = var.source.alphaM; source_r = var.source.r; source_betaM = var.source.betaM
   source_zeta = var.source.zeta; source_eta = var.source.eta 
+
+  psi = float(); wpsi = float()
   
   #print(point_alpha)
 
@@ -37,14 +39,15 @@ def Apu_u_angles_ddphidtheta(v,theta,e,dbeta,dphi,u,dphi_is_large):
   sinalM = np.sin(source_alphaM) ; cosalM = np.cos(source_alphaM)
   sindphi = np.sin(dphi) ; cosdphi = np.cos(dphi)
   sintheta = np.sin(theta)
-          
+  
   #	 angular momentum (eq 27)		
   hh = point_r * v * sintheta  	
     #  psi
   psi = np.arcsin(hh / source_r / u)
+  #print(psi)
   
   #########################################
-  if psi != psi or np.abs(psi-const.halfpi) < 1*(10**-8):
+  if psi != psi or (np.abs(psi-const.halfpi) < 1*(10**-8)):
 
     if psi != psi:
       f = open("PyPlumes/results/Apu_angles.txt", "a")
@@ -90,22 +93,28 @@ def Apu_u_angles_ddphidtheta(v,theta,e,dbeta,dphi,u,dphi_is_large):
   coslambdaM = (cosal - cosalM * cosdphi) / sinalM / sindphi
 
   
-  if dphi_is_large == 1 :
+  if dphi_is_large == True :
     sinlambda = - sinlambda
     coslambda = - coslambda
     sinlambdaM = - sinlambdaM
     coslambdaM = - coslambdaM
   # endif
 
+  var_lambda = float()
+  lambdaM = float()
+
   lambdaM = ultilities.myatan1(coslambdaM, sinlambdaM)
   var_lambda = ultilities.myatan1(coslambda, sinlambda)
-  
+
+  #print("lm = " + str(lambdaM))
   wpsi = np.arccos(np.cos(psi) * np.cos(source_zeta)+ \
     np.cos(lambdaM - source_eta) * np.sin(psi) * np.sin(source_zeta))
 
-  wrr = point_r_scaled ; wvv = v / const.vesc
+  wrr = point_r_scaled ; wvv = float(v / const.vesc)
 
-  pp = 2.0 * wrr * wrr * wvv * wvv * sintheta**2
+  #print("v is " + str(v) +"and wvv is " + str(wvv))
+
+  pp = 2.0 * wrr * wrr * wvv * wvv * (sintheta**2)
   dpp = 2.0 * pp / np.tan(theta)
   dee = (wvv * wvv - 1.0 / wrr) * dpp / e
   
@@ -113,17 +122,19 @@ def Apu_u_angles_ddphidtheta(v,theta,e,dbeta,dphi,u,dphi_is_large):
   cosphi = (pp / wrr - 1.0) / e
 
   ddphidtheta = (((1.0 + pp) * (wrr * wvv * wvv - 1.0) + wrr) * 2.0 * np.cos(theta)) \
-    / (wvv * np.sqrt(wrr * (-1.0 + wrr + wrr * wvv**2 - wrr**3 * wvv**2 * sintheta**2))) \
-    - (2.0 * sintheta**2 * (-2.0 + 2.0 * wrr * wvv**2 + 1.0 / sintheta**2))
+    / (wvv * np.sqrt(wrr * (-1.0 + wrr + wrr * (wvv**2) - (wrr**3 )* (wvv**2) * (sintheta**2)))) \
+    - (2.0 * (sintheta**2 )* (-2.0 + 2.0 * wrr * (wvv**2) + 1.0 / (sintheta**2)))
 
-  ddphidtheta = ddphidtheta * wvv * wvv * wrr / e / e
+  ddphidtheta = ddphidtheta * wvv*wvv * wrr / e/e
+
+  numder = float(0)
 
   if(ddphidtheta  !=  ddphidtheta) :
-    delta = 1*(1.0**-3)
-    dphi1 = deltaphi(theta+2.0*delta, wrr, wvv)
-    dphi2 = deltaphi(theta+delta, wrr, wvv)
-    dphi3 = deltaphi(theta-delta, wrr, wvv)
-    dphi4 = deltaphi(theta-2.0*delta, wrr, wvv)
+    delta = 1*(10**-3)
+    dphi1 = deltaphi((theta + 2.0*delta), wrr, wvv)
+    dphi2 = deltaphi((theta + delta), wrr, wvv)
+    dphi3 = deltaphi((theta - delta), wrr, wvv)
+    dphi4 = deltaphi((theta - 2.0*delta), wrr, wvv)
     
     numder = (-dphi1 + 8.0 * dphi2 - 8.0 * dphi3 + dphi4) / 12.0 / delta 
     numder = (dphi2 - dphi3) / 2.0 / delta
@@ -133,7 +144,8 @@ def Apu_u_angles_ddphidtheta(v,theta,e,dbeta,dphi,u,dphi_is_large):
     f.close()
     ddphidtheta = numder
   # endif  		
-
+  #print(ddphidtheta)
+  #print("numder = " + str(numder))
   return psi, wpsi, lambdaM, var_lambda, ddphidtheta, sindphi
 
   
@@ -143,8 +155,10 @@ def Apu_u_angles_ddphidtheta(v,theta,e,dbeta,dphi,u,dphi_is_large):
 
 # compute \Delta\phi from \theta, velocity and spacecraft position
 def deltaphi(theta, wrr, wvv):
+
+  deltaphi = float()
   
-  pp = 2.0 * wrr * wrr * wvv * wvv * np.sin(theta)**2
+  pp = 2.0 * (wrr**2) * (wvv**2)* (np.sin(theta)**2)
   e = np.sqrt(1.0 + 2.0 * pp * (wvv * wvv - 1.0 / wrr))
   
   cosphim = (pp - 1.0) / e
@@ -172,11 +186,12 @@ def deltaphi(theta, wrr, wvv):
 # returns the expression standing under the integral over v
 def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
  
-  semi_major_axis = (2.0 / var.point.r - velocity**2 / const.gm)**(-1)
+  semi_major_axis = (2.0 / var.point.r - (velocity**2) / const.gm)**(-1)
   theta = np.array([-999.0,-999.0])
   ee = np.array([0.0,0.0])
   deltat = np.array([0.0,0.0])
   dphi_is_large =  np.array([0,0], dtype = bool) 
+  Integrand = float()
 
   if var.source.production_fun > 0: 
     timeDependence = True
@@ -196,7 +211,7 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
  # print(ee)
 #~ 			write(*,*) 'intergand << theta', theta
 
-  uu = np.sqrt(const.vesc * const.vesc + 2.0 * (velocity * velocity / 2.0 - const.gm / var.point.r))
+  uu = np.sqrt(const.vesc* const.vesc + 2.0 * (velocity * velocity / 2.0 - (const.gm / var.point.r)))
   
   if(uu > var.source.ud_umax  or  uu < var.source.ud_umin) :
     fac1 = 0.0
@@ -219,8 +234,8 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
   psi = np.array([0.0,0.0])
   ddphidtheta = np.array([0.0,0.0])
 
-  for i  in range(0, 1):
-    if(timeDependence) :
+  for i  in range(0, 2):
+    if(timeDependence == True) :
       rate[i] = distf.production_rate(tnow - deltat[i], var.source.production_rate, \
                                                     var.source.production_fun)
     else:
@@ -242,10 +257,15 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
 
       #print(wpsi)
       #print(psi)
+      #print(" wpsi = " + str(wpsi[i]), "psi = " + str(psi[i]))
 
       fac2 = distf.ejection_direction_distribution(var.source.ejection_angle_distr, wpsi[i],psi[i], lambdaM, \
         var.source.zeta, var.source.eta)
+      #print(fac2)
+
       fac2 = fac2 / np.cos(psi[i])
+
+      #print("fac1 = " + str(fac1) + "fac2 = " + str(fac2) +  + "dd = " + str(ddphidtheta[i]))
                   
       tmpIntegrand = fac1 * fac2 / np.abs(ddphidtheta[i]) * rate[i]
 
@@ -253,8 +273,11 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
       if(const.flux) :
         tmpIntegrand = tmpIntegrand * velocity * np.abs(np.cos(theta[i]))
       # endif
+
+      #print("tmp = " +str(tmpIntegrand))
       
       Integrand = Integrand + tmpIntegrand
+
       if(tmpIntegrand  !=  tmpIntegrand) :
         f = open("PyPlumes/results/Integrand_number_density_output.txt","a")
         f.write("\n")
@@ -269,6 +292,7 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
     # endif
     tmpIntegrand = 0.0
   # enddo
+  #print(Integrand)
   return Integrand
 # # end def Integrand_number_density  
 
@@ -294,9 +318,9 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
 # it means "no physically plausible solution can be found"
 def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
   solved =  False 
-  theta = np.array([-555.0, -555.0])
-  dphi_is_large =  np.array([0,0], dtype = bool) 
-  deltat = np.array([0.0,0.0]) 
+  theta = np.array([-555.0, -555.0], dtype = float)
+  dphi_is_large =  np.array([False,False], dtype = bool) 
+  deltat = np.array([0.0,0.0], dtype =  float) 
   r2d = np.array([0.0,0.0])
   rm2d = np.array([0.0,0.0])
   shift = np.array([0.0,0.0])
@@ -318,7 +342,7 @@ def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
   x = np.array([0.0,0.0])
   y = np.array([0.0,0.0])
   x,y = ultilities.circle_intersection(rm2d[0], rm2d[1], 2.0 * a + rmoon, r2d[0], 2.0 * a + r)  	
-  ee = np.array([0.0,0.0]) 
+  ee = np.array([0.0,0.0], dtype = float) 
     
   for i  in range(0, 2):
     # shift is coordinates of the ellipse's center
@@ -347,10 +371,10 @@ def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
     # on the same branch and the trajectory doesn't intersect
     # the moon's surface (the particle doesn't pass the pericenter
     if (r2d[0] / rm2d[0] > 0.0 and r2d[1] / rm2d[1] > 0.0):  				
-      c = float(0.50 * np.sqrt(x[i]**2 + y[i]**2))  
+      c = float(0.50 * np.sqrt((x[i]**2) + (y[i]**2)))  
       #print(c**2)
       #print(a**2)
-      b = float(np.sqrt(np.abs(c**2 - a**2)))   						
+      b = float(np.sqrt(((c**2) - (a**2))))   						
       ee[i] = c / a
       one_plus_e = 1.0 + ee[i]
       one_minus_e = 1.0 - ee[i]
@@ -453,7 +477,7 @@ def theta_geometry_ellipse(r0, rm0, vv, phi, a0, timeDependence):
   # position of the ellsipse's second focus
   x, y = ultilities.circle_intersection(rm2d[0], rm2d[1], 2.0 * a - rmoon, r2d[0], 2.0 * a - r) 
   # distance between the foci of the ellipse
-  cc = np.sqrt(x**2 + y**2)
+  cc = np.sqrt((x**2) + (y**2))
   ee = np.array([0.0,0.0])
   deltat = np.array([0.0,0.0])  
   

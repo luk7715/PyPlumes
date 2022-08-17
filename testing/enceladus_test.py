@@ -25,6 +25,7 @@ density = np.zeros([nt,2])
 tmp_res = np.zeros([nt,2])
 
 var.source = input.read_sources_params(fname,Ns)
+#print("ui + Si + axis = " + str(var.source.ui)+ str(var.source.Gu_precalc) + str(var.source.symmetry_axis))
 #ttab, var.point = input.read_Cassini_E2(nt)
 
 #print (var.source.r)
