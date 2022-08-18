@@ -1,18 +1,14 @@
-# This file is a part of DUDI, the Fortran-95 implementation 
-# of the two-body model for dust dynamics
+# This file is a part of PyPlumes, a Python model for dust ejection dynamics
+# on atmosphereless surfaces
 # Version 1.0.0
-# This is free software. You can use and redistribute it 
-# under the terms of the GNU General Public License 
-# (http://www.gnu.org/licenses/)
-# If you do, please cite the following paper
+# Translated and modified from the Fortran-95 code in the following paper
 # Anastasiia Ershova and Jürgen Schmidt, 
 # Two-body model for the spatial distribution of dust ejected from
 # an atmosphereless body, 2021, A&A, 650, A186 
-# File: integrator.f95
-# Description: The subroutines that manage the numerical integration
-
-# Author: Anastasiia Ershova
-# E-mail: vveyzaa@gmail.com
+# File: integrator.py
+# Description: The functions for numerical integration
+# Author: Eulrika(Yiqi) Wu
+# E-mail: ulkw517@g.ucla.com
 
 import numpy as np
 import const
@@ -27,7 +23,7 @@ veps = 1*(10**-10)
 trpower = 4
 
 
-# The def rules the integration determining the parameters and the limits
+# The function rules the integration determining the parameters and the limits
 def DUDI(tnow):
   #integer Nprestep
   # fraction which the interval of the pole integration constitutes

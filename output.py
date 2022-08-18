@@ -1,18 +1,3 @@
-# This file is a part of DUDI, the Fortran-95 implementation 
-# of the two-body model for dust dynamics
-# Version 1.0.0
-# This is free software. You can use and redistribute it 
-# under the terms of the GNU General Public License (http://www.gnu.org/licenses/)
-# If you do, please cite the following paper
-# Anastasiia Ershova and Jürgen Schmidt, 
-# Two-body model for the spatial distribution of dust ejected from
-# an atmosphereless body, 2021, A&A, 650, A186 
-# File: dataoutmod.f95
-# Description: The subroutines used to write the result to a text-file
-
-# Author: Anastasiia Ershova
-# E-mail: vveyzaa@gmail.com
-
 import const
 import variables as var
 import numpy as np

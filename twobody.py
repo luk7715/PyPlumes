@@ -1,18 +1,15 @@
-# This file is a part of DUDI, the Fortran-95 implementation 
-# of the two-body model for dust dynamics
+# This file is a part of PyPlumes, a Python model for dust ejection dynamics
+# on atmosphereless surfaces
 # Version 1.0.0
-# This is free software. You can use and redistribute it 
-# under the terms of the GNU General Public License (http://www.gnu.org/licenses/)
-# If you do, please cite the following paper
+# Translated and modified from the Fortran-95 code in the following paper
 # Anastasiia Ershova and Jürgen Schmidt, 
 # Two-body model for the spatial distribution of dust ejected from
 # an atmosphereless body, 2021, A&A, 650, A186 
-# File: twobody_fun.f95
-# Description: The subroutines used to compute the integrand
+# File: twobody.py
+# Description: The functions used to compute the integrand
 
-# Author: Anastasiia Ershova
-# E-mail: vveyzaa@gmail.com
-# Compute various quantities needed for evaluation of the integrand
+# Author: Eulrika(Yiqi) Wu
+# E-mail: ulkw517@g.ucla.com
 
 import numpy as np
 import ultilities as ultilities 
@@ -299,7 +296,7 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
 
 
 
-# def theta_geometry_hyperbola recieves vectors' absolute
+# theta_geometry_hyperbola recieves vectors' absolute
 # values and the angle between these vectors
 # it's assumed that the point (0, 0, 0) is a focus of an hyperbola
 # value of a semi major axis of the hyperbola, the points lay on is
@@ -319,7 +316,7 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
 def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
   solved =  False 
   theta = np.array([-555.0, -555.0], dtype = float)
-  dphi_is_large =  np.array([False,False], dtype = bool) 
+  dphi_is_large =  np.array([False,False]) 
   deltat = np.array([0.0,0.0], dtype =  float) 
   r2d = np.array([0.0,0.0])
   rm2d = np.array([0.0,0.0])
@@ -437,7 +434,7 @@ def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
 # # end def theta_geometry_hyperbola
 
 
-# def theta_geometry_ellipse recieves absolute values
+# theta_geometry_ellipse recieves absolute values
 # of two vectors and the angle between these vectors
 # it's assumed that the point (0, 0, 0) is a focus of an ellipse
 # value of a semi major axis of an ellipse, the points lay on
@@ -454,7 +451,7 @@ def theta_geometry_hyperbola(r0, rm0, vv, phi, a0,timeDependence):
 
 def theta_geometry_ellipse(r0, rm0, vv, phi, a0, timeDependence): 
   solved =  False 
-  dphi_is_large =  np.array([0,0], dtype = bool) 
+  dphi_is_large =  np.array([False, False]) 
   theta = np.array([-888.0, -888.0])
   
   r = r0 / rm0  ; rmoon = rm0 / rm0
@@ -468,10 +465,6 @@ def theta_geometry_ellipse(r0, rm0, vv, phi, a0, timeDependence):
   # in both cases
   rm2d = np.array([0.0,0.0])
   rm2d[0] = rmoon * np.cos(phi) ; rm2d[1] = rmoon * np.sin(phi)
- # print("phi is " + str(phi))
-  #print(np.cos(phi))
-  #print(rmoon)
-  #print("rm2d is " + str(rm2d))
   
   # (x(1),y(1)) and (x(2),y(2)) are coordinates of 2 possible
   # position of the ellsipse's second focus

@@ -1,18 +1,3 @@
-# This file is a part of DUDI, the Fortran-95 implementation 
-# of the two-body model for dust dynamics
-# Version 1.0.0
-# This is free software. You can use and redistribute it 
-# under the terms of the GNU General Public License (http://www.gnu.org/licenses/)
-# If you do, please cite the following paper
-# Anastasiia Ershova and Jürgen Schmidt, 
-# Two-body model for the spatial distribution of dust ejected from
-# an atmosphereless body, 2021, A&A, 650, A186 
-# File: define_types.f95
-# Description: Definition of the structures used by the routines
-
-# Author: Anastasiia Ershova
-# E-mail: vveyzaa@gmail.com
-
 ##Classes of variables
 
 class ejection_speed_properties:     # ejection speed properties 
@@ -53,7 +38,7 @@ class source_properties(ejection_speed_properties):                     # parame
    
   # end type source_properties
 
-#define the variables!!!
+
 source = source_properties(0,0,0,0,0,0,0,0,0,0,0,0,0,0,ud)
 
 
@@ -68,5 +53,5 @@ class position_in_space:                      # where the dust density is to be 
   # end type position_in_space
 
 
-#define the variables!!!
+
 point = position_in_space(0,0,0,0,0,0)
