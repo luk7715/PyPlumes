@@ -25,7 +25,7 @@ tmp_res = np.zeros([nt,2])
 
 var.source = input.read_sources_params(fname,Ns)
 
-'''#loop through all sources in case there are multiple
+#loop through all sources in case there are multiple
 for i in range (0, Ns):
     for x in range (0,nt): 
         #loop through all data point
@@ -39,7 +39,7 @@ for i in range (0, Ns):
         tmp_res[x,:] = integrator.DUDI(tnow)
     density = density + tmp_res
 
-output.cassini_flyby_out(density, ttab, bg, nt)'''
+output.cassini_flyby_out(density, ttab, bg, nt)
 
 d = np.loadtxt('Pyplumes/results/E2_profile.dat', usecols=range(2))
 t = d[:,0]
