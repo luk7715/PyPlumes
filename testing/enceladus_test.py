@@ -49,7 +49,7 @@ hrdt = d[:,0]
 hrddens = d[:,1]
 plt.figure(1)
 plt.ylabel('number density of grains m$^{-3}$')
-plt.xlabel('seconds from the moment of the closest approach between Cassini an Enceladus')
+plt.xlabel('seconds from the moment of the closest approach between Cassini and Enceladus')
 plt.ylim(0,0.12)
 plt.suptitle('Number density profile of the plume during Enceladus flyby')
 model = plt.plot(t, dens, label = 'model number density', color = "purple")

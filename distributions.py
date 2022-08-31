@@ -93,8 +93,6 @@ def ejection_direction_distribution(distribution_shape, wpsi, psi, lambdaM, zeta
 
   return fpsi
     
-# # end def ejection_direction_distribution
-
 
       
 
@@ -121,12 +119,12 @@ def Jacobian_tilt(psi, lambdaM, zeta, A):
 
   return J
   
-# # end def Jacobian_tilt
 
 
 
-# This def represents the ejection speed distribution
-# (possibly time-dep# endent)
+
+# This function represents the ejection speed distribution
+# (possibly time-deeendent)
 # ud is  the parameter used to select the expression for the distribution
 # u is the ejection speed
 # R is the particle size

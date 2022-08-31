@@ -17,7 +17,7 @@ import numpy as np
 import os 
 
 
-# fundamental constants and auxilary numbers
+# This file is used to set the fundamental constants and auxilary numbers
 pi = 3.1415926535897930
 halfpi = pi / 2.00
 sqrtpi = np.sqrt(pi)
@@ -65,5 +65,3 @@ order_v_hy = 20
     
 #print('\n' + 'Constants and parameters imported!!')
 
-    	
-# end module const
