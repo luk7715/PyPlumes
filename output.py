@@ -32,4 +32,23 @@ def cassini_flyby_out(density, ttab, bg, nt):
 # # end def cassini_flyby_out  
 
 
+def surface_deposition_out(num, deposition, nt, dphi):
+  match num:
+    case 1:
+      fname = 'PyPlumes/results/narrow_jet_shallow_sd.dat'
+    case 2:
+      fname = 'PyPlumes/results/diffuse_source_steep_sd.dat'
+    case 3:
+      fname = 'PyPlumes/results/diffuse_source_shallow_sd.dat'
+    case 4:
+      fname = 'PyPlumes/results/narrow_jet_steep_sd.dat'
+   
+  f = open(fname,"w") 
+  for i  in range(0, nt):
+    f.write(str(dphi[i] *const.rm * 10**(-3)) + " " + str(deposition[i])+ " " )
+    f.write("\n")
+  f.close()
+			
+
+
 

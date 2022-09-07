@@ -28,9 +28,9 @@ rad2deg = 180.00 / pi
 gravity_constant = 6.674*(10**(-11))   		# m^3 / kg / s^2
   
 # parameters defining the moon
-moon_mass = 1.08022*(10**(20))  	# kg
+moon_mass = 4.8*(10**(22))  	# kg
 gm = gravity_constant * moon_mass
-rm = 252*(10**3)  	# meters
+rm = 3.1216*(10**6)  	# meters
 vesc = float(np.sqrt((gm * 2.00) / rm))
 #print("vesc = " + str(vesc))
       	
@@ -40,28 +40,28 @@ vesc = float(np.sqrt((gm * 2.00) / rm))
     # the surface parallel to the moon surface
     # parameter flux should be  True , if it is  False  : density is computed
 rho = 920.00  	# kg/m^3 
-flux =  False 
+flux =  True 
     
 # parameters of Gu def
     # p = 0 -- number density is computed, 1 -- mean radius,
     # 2 -- cross section, 3 -- mass density
-p = 0
+p = 3 
     # lower boundary for def Gu(rmin, rmax), microns
-rmin = 1.60
+rmin = 0.20
     # upper boundary for def Gu(rmin, rmax), microns
-rmax = 6.00
+rmax = 20.00
     
 # parameters controling accuracy
     # number of precalculated values of GR(u) integral
     # <=> u/u_gas goes from 0 to 1 with step 1/GRN
 GRN = 2000
     # order of integration G(R,u) over R to obtain GR(u)
-order_R = 30
+order_R = 10
     # order of Gaussian quadrature for integration
     # of n(r, alpha, beta, v, theta, lambda) over velocity (v)
     # separately for bound and unbound particles
-order_v_el = 50
-order_v_hy = 20
+order_v_el = 30
+order_v_hy = 5
     
 #print('\n' + 'Constants and parameters imported!!')
 

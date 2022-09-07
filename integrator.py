@@ -72,10 +72,12 @@ def DUDI(tnow):
 
   #print("amin is " +str(amin))
   #print(amin2)
+  #print(vmin)
+  #print(vmax)
 
   if amin > amin2:
-    pole = bool(1)
-  else: pole = bool(0)
+    pole = True
+  else: pole = False
 
   if pole != True:
      vmin = vmin2
@@ -96,13 +98,16 @@ def DUDI(tnow):
       
       f1 =  tb.Integrand_number_density(v_limits[0], amin, dphi, dbeta, tnow)
       viprev = v_limits[0]
+      #print(f1)
 
       #print(Nprestep)
 
       for i  in range(1, Nprestep):
         vi = (float(i-1) / float(Nprestep))**trpower * vinterval + v_limits[0]
         f2 = tb.Integrand_number_density(vi, amin, dphi, dbeta, tnow)
+        #print("f2 " +str(f2))
         density[0] = density[0] + (vi - viprev) * 0.50 * (f1 + f2)
+        #print("density1 " + str(density [0]))
         f1 = f2
         viprev = vi
       # enddo
@@ -123,6 +128,7 @@ def DUDI(tnow):
       for i  in range(0, const.order_v_el):
         term = tb.Integrand_number_density(ldif * xel[i] + lsum, amin, dphi, dbeta, tnow)
         density[0] = density[0] + ldif * wel[i]* term
+        #print("density2 " + str(density [0]))
       # enddo
     # endif
       
@@ -137,10 +143,13 @@ def DUDI(tnow):
       lsum = lsum * 0.50
       for i  in range(0, const.order_v_hy):
         term = tb.Integrand_number_density(ldif * xhy[i] + lsum, amin, dphi, dbeta, tnow)
+        #print("term is" + str(term))
         density[1] = density[1] + ldif * why[i] * term
+        #print("density3 " + str(density [1]))
       # enddo
     # endif
     # factor indep# endent on velocity
+    #print(density)
     density = density / var.point.r / var.source.r / np.sin(dphi)
   # endif
   return density

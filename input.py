@@ -68,6 +68,84 @@ def read_Cassini_E2(nt):
   return ttab, var.point
 
 
+# the subroutine provides the input data for the example
+# calculations of the Europa surface depositions
+def get_europa_input(Ns, nt):
+  #integer, intent(in) :: Ns, nt
+  #real(8), intent(out) :: dphi(nt)
+  #type(source_properties), intent(out) :: sources(Ns)
+  #type(position_in_space), intent(out) :: points(nt)
+  #integer i, ead_choice(4), sd_choice(4)
+  
+  ead_choice = np.array([1, 3, 3, 1])
+  sd_choice = np.array([2, 3, 2, 3])
+  
+  # define 4 sources with the same coordinates and verticle axis
+  # of symmetry but different size- and ejection direction distributions
+  var.source.alphaM= const.halfpi; var.source.betaM = 0.0; var.source.zeta=0.0
+  var.source.eta= 0.0; var.source.production_fun= 0
+  var.source.production_rate = 1*(10**14)
+  var.source.ud_shape = 1
+  var.source.ud_umin = 0.0
+  var.source.ud_umax = 500.0
+  var.ud.ud_shape = 1 ; var.ud.umin = 0.0
+  var.ud.umax = 500.0
+  var.source.r = const.rm
+  var.source.ejection_angle_distr = ead_choice
+  var.source.sd = sd_choice
+  var.source.rrM = np.array([0.0,0.0,0.0])
+  var.source.rrM[0] = const.rm *np.sin(var.source.alphaM) * np.cos(var.source.betaM)
+  var.source.rrM[1] = const.rm *np.sin(var.source.alphaM) * np.sin(var.source.betaM)
+  var.source.rrM[2] = const.rm *np.cos(var.source.alphaM)
+  var.source.is_jet = True
+
+  
+  ui = np.zeros([const.GRN, Ns])
+  Si = np.zeros([const.GRN, Ns])
+  for i  in range(0, Ns):
+    ui[:,i], Si[:,i] = gu.Gu_integral(var.source.sd[i])
+    #print(ui[:,i])
+
+  #print("ui is " + str(ui))
+  #print(Si)
+
+  var.source.ui = ui
+  var.source.Gu_precalc = Si 
+
+  axis = jet_direction(var.source.betaM, var.source.zeta, var.source.eta,var.source.rrM)
+  var.source.symmetry_axis = axis 
+  
+  # the points are equidistantly placed on a 10deg arc
+  # having the source at one of the arc's # ends
+  dphi = np.zeros(nt)
+
+  for i in range (0,nt):
+    dphi[i] = 2.0 * float(i+1) / float(nt) *const.deg2rad
+ 
+  var.point.r = const.rm
+  var.point.alpha = const.halfpi 
+  var.point.beta = dphi
+  var.point.rvector = np.zeros([nt,3])   
+
+  #print (var.point.r * np.sin(var.point.alpha) * np.cos(var.point.beta))
+  for i  in range(0, nt):
+    var.point.rvector[i,0] = var.point.r * np.sin(var.point.alpha) * np.cos(var.point.beta[i])
+    var.point.rvector[i,1] = var.point.r * np.sin(var.point.alpha) * np.sin(var.point.beta[i])
+    var.point.rvector[i,2] = var.point.r * np.cos(var.point.alpha) 
+  
+  var.point.r_scaled = 1.0
+  var.point.compute = True
+
+  
+
+  return dphi, var.point, var.source
+
+# end subroutine get_europa_input
+
+
+
+
+
 # input the parameters of the sources from the file with the name
 # stored in the variable fname
 def read_sources_params(fname, Ns):

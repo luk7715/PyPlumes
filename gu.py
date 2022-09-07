@@ -26,8 +26,10 @@ def Gu_integral(sd):
   ui = np.zeros(const.GRN)
 
   for i in range (0,const.GRN):
-    ui[i] = var.ud.umin + float(i) / float(const.GRN - 1)*(var.ud.umax - var.ud.umin)
-    #print("uii is " + str(ui[i]))
+    ui[i] = var.ud.umin + float(i+1) / float(const.GRN)*(var.ud.umax - var.ud.umin)
+  
+    #print(float(i+1) / float(const.GRN)*(var.ud.umax - var.ud.umin))
+   # print("uii is " + str(ui[i]))
 
   #print("ui is " + str(ui))
 

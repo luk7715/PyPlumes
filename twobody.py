@@ -258,11 +258,10 @@ def Integrand_number_density(velocity, amin, dphi, dbeta, tnow):
 
       fac2 = distf.ejection_direction_distribution(var.source.ejection_angle_distr, wpsi[i],psi[i], lambdaM, \
         var.source.zeta, var.source.eta)
-      #print(fac2)
 
       fac2 = fac2 / np.cos(psi[i])
 
-      #print("fac1 = " + str(fac1) + "fac2 = " + str(fac2) +  + "dd = " + str(ddphidtheta[i]))
+      #print("fac1 = " + str(fac1) + "fac2 = " + str(fac2) + "dd = " + str(ddphidtheta[i]))
                   
       tmpIntegrand = fac1 * fac2 / np.abs(ddphidtheta[i]) * rate[i]
 

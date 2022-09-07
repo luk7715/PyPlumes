@@ -1,83 +1,66 @@
-import numpy as np
-import pandas as pd
-import const
-import variables as var 
-import gu
-import PyPlumes.ultilities as ultilities 
-
-# input the parameters of the sources from the file with the name
-# stored in the variable fname
-def read_sources_params(fname, Ns):
-
-  data = pd.read_csv(fname, nrows = Ns)
-  data_in_arrays = data.values
+# the subroutine provides the input data for the example
+# calculations of the Europa surface depositions
+def get_europa_input(Ns, sources, nt, points, dphi):
+  use define_types
+  use gu
+  implicit none
+  #integer, intent(in) :: Ns, nt
+  #real(8), intent(out) :: dphi(nt)
+  type(source_properties), intent(out) :: sources(Ns)
+  type(position_in_space), intent(out) :: points(nt)
+  #integer i, ead_choice(4), sd_choice(4)
   
-  var.source.alphaM = data_in_arrays[:,0] ; var.source.betaM = data_in_arrays[:,1]
-  var.source.zeta = data_in_arrays[:,2] ; var.source.eta = data_in_arrays[:,3]
-  var.source.production_fun = data_in_arrays[:,4] ; var.source.production_rate = data_in_arrays[:,5]
-  var.source.ud_shape = data_in_arrays[:,6] ; var.source.ud_umin = data_in_arrays[:,7]
-  var.source.ud_umax = data_in_arrays[:,8] ; var.source.ejection_angle_distr = data_in_arrays[:,9]
-  var.source.sd = data_in_arrays[:,10]
-
-  var.source.r = const.rm
-  var.source.alphaM = var.source.alphaM * const.deg2rad
-  var.source.betaM = var.source.betaM * const.deg2rad
-  var.source.alphaM = const.halfpi - var.source.alphaM
-
-  var.source.zeta = var.source.zeta *const.deg2rad
-  var.source.eta = var.source.eta * const.deg2rad
-
-  var.source.rrM[0] = const.rm *np.sin(var.source.alphaM) * np.cos(var.source.betaM)
-  var.source.rrM[1] = const.rm *np.sin(var.source.alphaM) * np.sin(var.source.betaM)
-  var.source.rrM[2] = const.rm *np.cos(var.source.alphaM)
-
-  var.source.is_jet = True
-
-  ui, Si = gu.Gu_integral(var.source.sd)
-  var.source.ui = ui
-  var.source.Gu_precalc = Si 
-
-  axis = jet_direction(var.source.betaM, var.source.zeta, var.source.eta,var.source.rrM)
-  var.source.symmetry_axis = axis 
-          				
-# end function read_sources_params
-
-
-
-# obtains Cartesian coordinates of a unit vector 
-# in the moon-centered coordinate system
-# aligned with the ejection symmetry axis
-# the source's position (rrM - Cartesian coordinates, betaM - eastern longitude),
-# the jet's zenith angle (zeta) and azimuth (eta) are known
-def jet_direction(betaM, zeta, eta, rrM):
-
-  rtmp = rrM / const.rm
-  tmpang = 3.0 * const.halfpi-betaM
-  if(zeta != 0.0): 
-    xout, yout, zout = ultilities.eulrot(0.0, 0.0, tmpang, rtmp[0], rtmp[1], rtmp[2], 0)
-    rtmp[0] = xout ; rtmp[1] = yout ; rtmp[2] = zout
-    
-    xj[0] = 0.0
-    xj[1] = 1.0 * np.sign(rtmp[2]) * np.abs(rtmp[2])
-    xj[2] = -1.0 * np.sign(rtmp[1]) * np.abs(rtmp[1])
-    xj = xj/ultilities.norma3d(xj)
-
-    yj = ultilities.vector_product(rtmp,xj)
-        
-    jetdir = np.sin(zeta) * np.cos(eta) * xj - np.sin(zeta) * np.sin(eta) * yj \
-        + np.cos(zeta) * rtmp
-
-    jetdir = jetdir / ultilities.norma3d(jetdir)
-    
-    xout, yout, zout = ultilities.eulrot(0.0, 0.0, tmpang, rtmp[0], rtmp[1], rtmp[2],1)
-
-    rtmp[0]= xout ; rtmp[1] = yout ; rtmp[2] = zout
-    
-    xout, yout, zout = ultilities.eulrot(0.0, 0.0, tmpang, jetdir[0], jetdir[1], jetdir[2], 1)
-
-    jetdir[0] = xout ; jetdir[1] = yout ; jetdir[2] = zout
-
-  else: 
-    jetdir = rtmp
+  ead_choice = [1, 3, 3, 1]
+  sd_choice = [2, 3, 2, 3]
   
-  return jetdir
+  # define 4 sources with the same coordinates and verticle axis
+  # of symmetry but different size- and ejection direction distributions
+  for i  in range(0, Ns):
+    sources(i)%alphaM = halfpi
+    sources(i)%betaM = 00
+    sources(i)%zeta = 00
+    sources(i)%eta = 00
+    sources(i)%production_fun = 0
+    sources(i)%production_rate = 1d14
+    sources(i)%ud%ud_shape = 1
+    sources(i)%ud%umin = 00
+    sources(i)%ud%umax = 5000
+    sources(i)%ejection_angle_distr = ead_choice(i)
+    sources(i)%sd = sd_choice(i)
+    sources(i)%r = rm
+
+        		
+    sources(i)%rrM(1) = rm * sin(sources(i)%alphaM) \
+                * cos(sources(i)%betaM)
+    sources(i)%rrM(2) = rm * sin(sources(i)%alphaM) \
+                * sin(sources(i)%betaM)  
+    sources(i)%rrM(3) = rm * cos(sources(i)%alphaM)
+    	
+    sources(i)%is_jet =  True 
+    
+    call jet_direction(sources(i)%betaM, sources(i)%zeta, sources(i)%eta, \
+              sources(i)%rrM, sources(i)%symmetry_axis)
+    call Gu_integral(sources(i)%ui, sources(i)%Gu_precalc, sources(i)%sd, \
+              sources(i)%ud)
+  # enddo
+  
+  # the points are equidistantly placed on a 10deg arc
+  # having the source at one of the arc's # ends
+  forall(i = 1:nt) dphi(i) = 20 * dble(i) / dble(nt) * deg2rad
+  
+  for i  in range(0, nt):
+    points(i)%r = rm
+    points(i)%alpha = halfpi 
+    points(i)%beta = dphi(i)
+    points(i)%rvector(1) = points(i)%r * sin(points(i)%alpha) \
+                      * cos(points(i)%beta)
+    points(i)%rvector(2) = points(i)%r * sin(points(i)%alpha) \
+                      * sin(points(i)%beta)
+    points(i)%rvector(3) = points(i)%r * cos(points(i)%alpha)
+    points(i)%r_scaled = 10
+    points(i)%compute =  True 
+  # enddo    		
+
+
+# end subroutine get_europa_input
+

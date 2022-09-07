@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 import os
 import sys
 import inspect
@@ -30,33 +31,73 @@ tnow = 0.0
 	#type(source_properties) source(Ns)
 	#type(position_in_space) point(nt)
 	
-	call get_europa_input(Ns, source, nt, point, dphi)
+dphi, var.point, var.source = input.get_europa_input(Ns,nt)
 
-	call mass_production(m1, source(1)%sd, r1, r2)
-	call mass_production(m2, source(2)%sd, r1, r2)
-	! integrate the production rate over time
+m1 = gu. mass_production(var.source.sd[0], r1, r2)
+m2 = gu.mass_production(var.source.sd[1], r1, r2)
+#integrate the production rate over time
 
-	mass_steep = source(1)%production_rate * m2
-	mass_shallow = source(1)%production_rate * m1
+mass_steep = var.source.production_rate * m2
+mass_shallow = var.source.production_rate * m1
+
+print("with the shallow size distribution, the total mass produced in a second is " + str(mass_shallow) +"kg\n")
+print("with the steep size distribution, the total mass produced in a second is " + str(mass_steep) +"kg\n")
+
+massflux = np.zeros([nt,2])
+##print(var.point.rvector)
+eadini = var.source.ejection_angle_distr
+sdini = var.source.sd
+uiini = var.source.ui
+GUini = var.source.Gu_precalc
+rvector_initial = var.point.rvector 
+beta_initial = var.point.beta
+
+for i_s in range(0, Ns):
 	
-	write(*,*) '   '
-	write(*,'(A84,e10.3,x,A2)') 'with the shallow size distribution the total &
-								mass produced in a second', mass_shallow, 'kg'
-	write(*,'(A84,e10.3,x,A2)') 'with the steep size distribution the total &
-								mass produced in a second  ', mass_steep, 'kg'
-	write(*,*) '   '
-								
-	do i_s = 1, Ns
-		!$OMP PARALLEL PRIVATE(i) &
-		!$OMP SHARED(i_s, point, source, massflux)
-		!$OMP DO
-		do i = 1, nt
-			call DUDI(massflux(i,:), point(i), source(i_s), tnow)
-		enddo
-		!$OMP END DO
-		!$OMP END PARALLEL
-		call surface_deposition_out(i_s, massflux(:,1), nt, dphi)
-	enddo
+	var.source.ejection_angle_distr = var.source.ejection_angle_distr[i_s]
+	var.source.sd = var.source.sd[i_s]
+	var.source.ui = var.source.ui[: ,i_s]
+	var.source.Gu_precalc = var.source.Gu_precalc[:,i_s] 
+
+	for i in range(0,nt):
+		var.point.beta = var.point.beta[i]
+		var.point.rvector = var.point.rvector[i,:]
+
+		massflux[i,:] = integrator.DUDI(tnow)
+
+		#print(massflux[i,:])
+
+		var.point.rvector = rvector_initial
+		var.point.beta = beta_initial
+		#print(var.point.beta)
+
+	output.surface_deposition_out(i_s+1, massflux[:,0], nt, dphi)
+
+	var.source.ejection_angle_distr = eadini
+	var.source.sd = sdini 
+	var.source.ui = uiini 
+	var.source.Gu_precalc = GUini
+	
 
 	
-end
+###plotting the results
+fnames = ('PyPlumes/results/narrow_jet_shallow_sd', 'PyPlumes/results/diffuse_source_steep_sd', 'PyPlumes/results/diffuse_source_shallow_sd', 'PyPlumes/results/narrow_jet_steep_sd')
+ead = (' narrow jet', ' diffuse source')
+sd = ('steep size distribution,', 'shallow size distribution,')
+d = []
+rad = []
+for i in range(4):
+	d.append(np.loadtxt(fnames[i]+'.dat', usecols=range(2)))
+	rad.append(d[i][:,0])
+plt.yscale('log')
+plt.xlim(0,110)
+plt.plot(rad[0], d[0][:,1], 'k--', label = sd[1] + ead[0])
+plt.plot(rad[2], d[2][:,1], 'b--', label = sd[1] + ead[1])
+plt.plot(rad[3], d[3][:,1], 'k-', label = sd[0] + ead[0])
+plt.plot(rad[1], d[1][:,1], 'b-', label = sd[0] + ead[1])
+plt.ylabel('deposited mass, $kg/m^2/s$')
+plt.xlabel('distance from the source')
+plt.legend(loc = 'upper right')
+imname = 'PyPlumes/results/mass_deposition' + '.png'
+plt.savefig(imname)
+plt.show()

@@ -41,7 +41,7 @@ def circle_intersection(x0, y0, R0, x1, R1):
       	
   sumdifs2 = dx2 + dy2
       	
-  sqrtshort = np.sqrt(-2.0 * (x1x0 - np.abs(x1)) * (sR**2 - sumdifs2) * dy2)
+  sqrtshort = np.sqrt(np.abs(-2.0 * (x1x0 - np.abs(x1)) * (sR**2 - sumdifs2) * dy2))
       	
   ybracket = (R12 + sumdifs2) * dy2
 

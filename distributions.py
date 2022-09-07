@@ -65,7 +65,7 @@ def ejection_direction_distribution(distribution_shape, wpsi, psi, lambdaM, zeta
     case 3:
     # pseudo Gaussian distribution of polar angle,
     # uniform distribution of azimuth
-      if(wpsi < np.halfpi * 0.99) :
+      if(wpsi < const.halfpi * 0.99) :
         fpsi = np.exp(-(wpsi-psimax45)**2 / 2.0 / omega45 / omega45)
         # this factor is normalization due to the fact that fpsi
         # domain is from 0 to pi/2 and not from -infinity to +infinity
