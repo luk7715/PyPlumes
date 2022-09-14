@@ -1,13 +1,12 @@
 # This file is a part of PyPlumes, a Python model for dust ejection dynamics
 # on atmosphereless surfaces
 # Version 1.0.0
-# Translated and modified from the Fortran-95 code in the following paper
-# Anastasiia Ershova and Jürgen Schmidt, 
-# Two-body model for the spatial distribution of dust ejected from
-# an atmosphereless body, 2021, A&A, 650, A186 
+# Translated and modified from the Fortran-95 code in the following paper by Anastasiia Ershova and Jürgen Schmidt, 
+# Two-body model for the spatial distribution of dust ejected from an atmosphereless body, 2021, A&A, 650, A186 
+
+
 # File: const.py
-# Description: The fundamental constants and the numerical parameters
-#              that are used by other functions
+# Description: The fundamental constants and the numerical parameters that are used by other functions
 
 # Author: Eulrika(Yiqi) Wu
 # E-mail: ulkw517@g.ucla.com
@@ -18,6 +17,8 @@ import os
 
 
 # This file is used to set the fundamental constants and auxilary numbers
+# Modify this file to fit for your chosen body!
+
 pi = 3.1415926535897930
 halfpi = pi / 2.00
 sqrtpi = np.sqrt(pi)
@@ -32,7 +33,7 @@ moon_mass = 4.8*(10**(22))  	# kg
 gm = gravity_constant * moon_mass
 rm = 3.1216*(10**6)  	# meters
 vesc = float(np.sqrt((gm * 2.00) / rm))
-#print("vesc = " + str(vesc))
+
       	
 # other parameters defining the quantity of interest
     # density of the dust particles (if one wants to compute mass)
@@ -63,5 +64,4 @@ order_R = 10
 order_v_el = 30
 order_v_hy = 5
     
-#print('\n' + 'Constants and parameters imported!!')
 

@@ -1,31 +1,36 @@
 # This file is a part of PyPlumes, a Python model for dust ejection dynamics
 # on atmosphereless surfaces
 # Version 1.0.0
-# Translated and modified from the Fortran-95 code in the following paper
-# Anastasiia Ershova and Jürgen Schmidt, 
-# Two-body model for the spatial distribution of dust ejected from
-# an atmosphereless body, 2021, A&A, 650, A186 
+# Translated and modified from the Fortran-95 code in the following paper by Anastasiia Ershova and Jürgen Schmidt, 
+# Two-body model for the spatial distribution of dust ejected from an atmosphereless body, 2021, A&A, 650, A186 
+
 # File: distributions.py
-# Description: The functions describing the ejection process and auxilary
-#              functions used by them
+# Description: The functions describing the ejection process and auxilary functions used by them
 
 # Author: Eulrika(Yiqi) Wu
 # E-mail: ulkw517@g.ucla.com
+
 import numpy as np
 import const
 import variables as var
 
 
-# The axisymmetric distribution of ejection direction
-# distribution_shape is the parameter used to select
-# the expression for the PDF
-# wpsi is the polar angle in the coordinate system where
-# the distribution is axisymmetrical
-# psi is the polar angle in the horizontal coordinate system
-# lambdaM is the azimuth in the horizontal CS
-# zeta and eta are respectively zenith angle and azimuth
-# of the distribution symmetry axis in the horizontal CS
+
 def ejection_direction_distribution(distribution_shape, wpsi, psi, lambdaM, zeta, eta):
+  '''
+  To calculate the axisymmetric distribution of ejection direction
+  Args:
+    -distribution_shape: Integer. Used to select the expression for the distribution function
+    -wpsi: The polar angle in the coordinate system where the distribution is axisymmetrical
+    -psi: The polar angle in the horizontal coordinate system
+    -lambdaM:The azimuth in the horizontal coordinate system
+    -zeta: Zenith angle of the distribution symmetry axis in the horizontal coordinate system
+    -eta: Azimuth angle of the distribution symmetry axis in the horizontal coordinate system
+  Return:
+    -fpsi: Angle between the ejectiong direction and the symmetry axis 
+  Return Type:
+    Float
+  '''
 
 ###Define constants 
   normconst1 = 7.5960829056967811*(10**-3)
@@ -50,7 +55,7 @@ def ejection_direction_distribution(distribution_shape, wpsi, psi, lambdaM, zeta
         fpsi = fpsi / const.twopi
       else:
         fpsi = 0.0
-      # endif
+
 
     case 2:
     # Uniform distribution of polar angle inside a cone,
@@ -59,7 +64,7 @@ def ejection_direction_distribution(distribution_shape, wpsi, psi, lambdaM, zeta
         fpsi = 1.0 / (1.0 - np.cos(omega10)) / const.twopi
       else:
         fpsi = 0.0
-      # endif
+    
 
 
     case 3:
@@ -73,11 +78,11 @@ def ejection_direction_distribution(distribution_shape, wpsi, psi, lambdaM, zeta
         fpsi = fpsi / const.twopi
       else:
         fpsi = 0.0
-      # endif
+
 
 
     case 4:
-    # HERE IS THE PLACE FOR WRITING YOUR OWN PDF
+    # HERE IS THE PLACE FOR WRITING YOUR OWN DISTRIBUTION
      fpsi = 0.0
 
    
@@ -85,25 +90,32 @@ def ejection_direction_distribution(distribution_shape, wpsi, psi, lambdaM, zeta
   if zeta != 0.0 :
     Jpsi = Jacobian_tilt(psi, lambdaM, zeta, eta)
     fpsi = fpsi * Jpsi
-  # endif
 
   fpsi = fpsi * np.sin(wpsi)
 
-  #print("fpsi = "+ str(fpsi))
 
   return fpsi
     
 
       
 
-# Jacobian of coordinate transformation from vertical CS
-# to the CS with z-axis coinciding with the jet axis of symmetry
-# zeta and A are respectively zenith angle ang azimuth
-# of the distribution symmetry axis in the horizontal CS
-# psi and lambdaM are respectively polar angle
-# and azimuth of ejection in the horizontal CS
 def Jacobian_tilt(psi, lambdaM, zeta, A):  
+  '''
+  To calculate the jacobian of coordinate transformation from the vertical coordinate system to 
+  the coordinate system with z-axis coinciding with the jet axis of symmetry.
+  Args:
+    -psi: Polar angle of ejection in the horizaontal coordinate system
+    -lambdaM: Azimuth of ejection in the horizontal coordinate system
+    -zeta: Zenith angle of the distribution symmetry axis in the horizontal coordinate system
+    -A: Azimuth of the distribution symmetry axis in the horizontal coordinate system
+  Return:
+    -J: The value of the jacobian
+  Return Type:
+    Float
+  '''
+
   J= 0.0
+
   if(psi < 0.120  and  zeta < 0.120) :
     J = psi / np.sqrt(psi*psi + zeta*zeta - 2.0 * psi * zeta * np.cos(lambdaM - A))
   else:
@@ -129,6 +141,15 @@ def Jacobian_tilt(psi, lambdaM, zeta, A):
 # u is the ejection speed
 # R is the particle size
 def ejection_speed_distribution(u, R):
+  '''
+  Args:
+    -u: ejection speed
+    -R: particle size
+  Return:
+    -fu:
+  Return Type:
+    Float
+  '''
   Rc = 0.5
   fu = 0.0
 
