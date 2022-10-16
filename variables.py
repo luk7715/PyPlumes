@@ -11,7 +11,9 @@ ud = ejection_speed_properties(0,0,0)
 
 
 
-class source_properties(ejection_speed_properties):                     # parameters of dust ejection
+class source_properties(ejection_speed_properties): 
+  '''
+  This class contains parameters describing the dust ejection'''
   def __init__(self, rrM, r, alphaM, betaM,zeta,eta,symmetry_axis,ejection_angle_distr,\
     sd,ui,Gu_precalc,production_fun,production_rate,is_jet,ejection_speed_properties):
     self.rrM = rrM                           # Cartesian coordinates of a point source in the moon-centered coordinate system
@@ -42,16 +44,19 @@ class source_properties(ejection_speed_properties):                     # parame
 source = source_properties(0,0,0,0,0,0,0,0,0,0,0,0,0,0,ud)
 
 
-class position_in_space:                      # where the dust density is to be calculated
+
+class position_in_space:  
+  '''
+  This class defines the point in space where the density is calculated
+  Measured in the moon's centered coordinate system
+  '''
   def __init__(self, r, r_scaled, alpha, beta, rvector, compute):
-    self.r = r                                # distance from the center of the moon
-    self.r_scaled = r_scaled                  # distance from the center of the moon divided by the moon radius
-    self.alpha = alpha                        # polar angle
-    self.beta = beta                          # eastern longitude
-    self.rvector = rvector                   # Cartesian coordinates of the point 
-    self.compute = compute                    # marker that density should or should not be computed in this point                  
+    self.r = r                                # Radial distance from the center of the moon to the spacecraft, meters
+    self.r_scaled = r_scaled                  # Radial distance from the center of the moon to the spacecraft in units of the moon radius
+    self.alpha = alpha                        # Polar angle of the spacecraft, in radians 
+    self.beta = beta                          # Eastern longitude of the spacecraft, in radians
+    self.rvector = rvector                    # Cartesian coordinates of the spacecraft
+    self.compute = compute                    # TRUE if the density in this point must be calculated (allows to exclude regions where the calculations are unnecessary)
+                                                          
   # end type position_in_space
-
-
-
 point = position_in_space(0,0,0,0,0,0)

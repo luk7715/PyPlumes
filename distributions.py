@@ -135,16 +135,15 @@ def Jacobian_tilt(psi, lambdaM, zeta, A):
 
 
 
-# This function represents the ejection speed distribution
-# (possibly time-deeendent)
-# ud is  the parameter used to select the expression for the distribution
-# u is the ejection speed
-# R is the particle size
+
 def ejection_speed_distribution(u, R):
   '''
+  This functionrepresents the possibly time-dependent ejection speed distribution.
+  When necessary, go to case 3 to create your own distribution functions. 
+
   Args:
-    -u: ejection speed
-    -R: particle size
+    -u: ejection speed in m/s
+    -R: particle radius in microns
   Return:
     -fu:
   Return Type:
@@ -166,7 +165,7 @@ def ejection_speed_distribution(u, R):
 
     case 3:
     # HERE IS THE PLACE FOR WRITING YOUR OWN PDF
-      fu = 0.0
+      fu = 0.0   #replace with fu= your desired distribution 
   # endselect
 
   return fu
@@ -183,6 +182,24 @@ def ejection_speed_distribution(u, R):
 # mom defines the obtained quantity: 0 -- number density,
 # 1 -- mean radius, 2 -- cross section, 3 -- volume
 def size_distribution(R, sd, mom):
+  '''
+  This function represents the size distribution of the dust particles.
+  It can be used also to obtain the mean radius, cross section
+  or volume of the dust particles.
+  When necessary, go to case 4 to create your own distribution function.
+
+  Args:
+   -R: Particle radiusin microns
+   -sd: integer number used to select the distribution 
+   -mom:   parameter defining the obtained quantity: 
+           0 -- number density, 1 -- mean radius, 
+           2 -- cross section, 3 -- volume 
+  Return:
+  -fR
+  Return Type:
+  -Float 
+
+  '''
   mu = -1.0
   sigma = 1.50
   r1 = 0.20
@@ -214,7 +231,7 @@ def size_distribution(R, sd, mom):
 
     case 4:
       # HERE IS THE PLACE FOR WRITING YOUR OWN PDF
-      fR = 0.0
+      fR = 0.0 #Replace with desired distribution
   # endselect
   fR = ( R**mom )* fR / C_size_distr
 
@@ -231,6 +248,22 @@ def size_distribution(R, sd, mom):
 # rate at maximum.
 # ratefun is the parameter used to choose the expression for the gammarate
 def production_rate(t, gamma0, ratefun): 
+  '''
+  This function represents the gamma(t) factor in formula 43 from paper.
+  When necessary, go to case 4 to create your own distribution function.
+
+  Args:
+   -t: moment of ejection, seconds
+   -gamma0:  parameter which can be used in the definition
+             of the function. In the implemented examples
+             gamma0 is the production rate at maximum
+             (particles/second)
+   -ratefun: parameter used to choose the expression for the production rate 
+  Returns:
+   -gammarate
+  Return Type:
+   Float
+  '''
   gammarate = 0.0
   match (ratefun):
     case 1:
@@ -246,7 +279,7 @@ def production_rate(t, gamma0, ratefun):
       # endif
     case 3:
       # HERE IS THE PLACE TO WRITE YOUR OWN def FOR THE PRODUCTION RATE
-      gammarate = 0.0
+      gammarate = 0.0 #replace with desired distribution 
   # endselect
   
   return gammarate
