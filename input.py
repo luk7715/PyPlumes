@@ -7,13 +7,16 @@ import ultilities as ultilities
 
 
 
-# A template for inputing the spacecraft coordinates from the file with the name 
-# stored in the variable fname
-# in the file fname the coordinates are written as follows
-# radial distance from the moon center [m], latitude [deg], eastern longitude [deg]
 def read_spacecraft_coordinates(fname,nt):
   '''
   This function is the template for inputing spacecraft coordinates from files.
+  In the file fname the coordinates should be written as:
+  radial distance from the moon center [m], latitude [deg], eastern longitude [deg].
+  The class var.point will be constructed using the data input.
+
+  Args:
+   -fname: Path to the desired file, string
+   -nt: Number of points to be calculated, integer
   '''
   data = np.loadtxt(fname, max_rows= nt)
   data_in_arrays = data
@@ -40,9 +43,15 @@ def read_spacecraft_coordinates(fname,nt):
 # end subroutine read_spacecraft_coordinates
 
 
-##Specifically for read in the Cassini E2 flyby data file based on the template above
-#the file was prepared in advance using SPICE software
+
 def read_Cassini_E2(nt):
+  '''
+  This function is specifically written for reading in the Cassini E2 flyby data based 
+  on the template above. The file was prepared in advance using SPICE software
+  
+  Args:
+   -nt: Number of points to be calculated, integer
+  '''
   data = np.loadtxt("PyPlumes/input_data_files/Cassini_E2_flyby.dat", max_rows= nt)
   data_in_arrays = data
   #print(data_in_arrays)
@@ -71,15 +80,74 @@ def read_Cassini_E2(nt):
   return ttab, var.point
 
 
-# the subroutine provides the input data for the example
-# calculations of the Europa surface depositions
+
+
+def read_sources_params(fname, Ns):
+  '''
+  This function is the template for inputing the parameters of the sources from files.
+  The class var.source will be constructed using the data input.
+
+  Args:
+   -fname: Path to the desired file, string
+   -Ns: Number of sources, integer
+  '''
+
+  data = np.loadtxt(fname, max_rows= Ns)
+  data_in_arrays = data
+  #print(data_in_arrays)
+
+  var.source.alphaM = data_in_arrays[0] ; var.source.betaM = data_in_arrays[1]
+  var.source.zeta = data_in_arrays[2] ; var.source.eta = data_in_arrays[3]
+  var.source.production_fun = data_in_arrays[4] ; var.source.production_rate = data_in_arrays[5]
+  var.source.ud_shape = data_in_arrays[6] ; var.source.ud_umin = data_in_arrays[7]
+  var.source.ud_umax = data_in_arrays[8] ; var.source.ejection_angle_distr = data_in_arrays[9]
+  var.source.sd = data_in_arrays[10]
+
+  var.ud.ud_shape = data_in_arrays[6] ; var.ud.umin = data_in_arrays[7]
+  var.ud.umax = data_in_arrays[8] 
+  #print("check input")
+  #print (var.source.alphaM)
+
+  var.source.r = const.rm
+  var.source.alphaM = var.source.alphaM * const.deg2rad
+  #print("in the function")
+  #print (var.source.alphaM)
+  var.source.betaM = var.source.betaM * const.deg2rad
+  var.source.alphaM = const.halfpi - var.source.alphaM
+  #print("check output")
+  #print (var.source.alphaM)
+
+  var.source.zeta = var.source.zeta *const.deg2rad
+  var.source.eta = var.source.eta * const.deg2rad
+
+  var.source.rrM = np.array([0.0,0.0,0.0])
+  var.source.rrM[0] = const.rm *np.sin(var.source.alphaM) * np.cos(var.source.betaM)
+  var.source.rrM[1] = const.rm *np.sin(var.source.alphaM) * np.sin(var.source.betaM)
+  var.source.rrM[2] = const.rm *np.cos(var.source.alphaM)
+
+  var.source.is_jet = True
+
+  ui, Si = gu.Gu_integral(var.source.sd)
+  var.source.ui = ui
+  var.source.Gu_precalc = Si 
+
+  axis = jet_direction(var.source.betaM, var.source.zeta, var.source.eta,var.source.rrM)
+  var.source.symmetry_axis = axis 
+  return var.source
+          				
+# end function read_sources_params
+
+
+
 def get_europa_input(Ns, nt):
-  #integer, intent(in) :: Ns, nt
-  #real(8), intent(out) :: dphi(nt)
-  #type(source_properties), intent(out) :: sources(Ns)
-  #type(position_in_space), intent(out) :: points(nt)
-  #integer i, ead_choice(4), sd_choice(4)
-  
+  '''
+  This function is specifically written for getting the input data for the Europa
+  surface depositions calculation based on the templates above.
+
+  Args:
+   -nt: Numer of points to be calculated, integer
+   -Ns: Number of sources, integer
+  '''
   ead_choice = np.array([1, 3, 3, 1])
   sd_choice = np.array([2, 3, 2, 3])
   
@@ -147,65 +215,23 @@ def get_europa_input(Ns, nt):
 
 
 
-
-
-# input the parameters of the sources from the file with the name
-# stored in the variable fname
-def read_sources_params(fname, Ns):
-
-  data = np.loadtxt(fname, max_rows= Ns)
-  data_in_arrays = data
-  #print(data_in_arrays)
-
-  var.source.alphaM = data_in_arrays[0] ; var.source.betaM = data_in_arrays[1]
-  var.source.zeta = data_in_arrays[2] ; var.source.eta = data_in_arrays[3]
-  var.source.production_fun = data_in_arrays[4] ; var.source.production_rate = data_in_arrays[5]
-  var.source.ud_shape = data_in_arrays[6] ; var.source.ud_umin = data_in_arrays[7]
-  var.source.ud_umax = data_in_arrays[8] ; var.source.ejection_angle_distr = data_in_arrays[9]
-  var.source.sd = data_in_arrays[10]
-
-  var.ud.ud_shape = data_in_arrays[6] ; var.ud.umin = data_in_arrays[7]
-  var.ud.umax = data_in_arrays[8] 
-  #print("check input")
-  #print (var.source.alphaM)
-
-  var.source.r = const.rm
-  var.source.alphaM = var.source.alphaM * const.deg2rad
-  #print("in the function")
-  #print (var.source.alphaM)
-  var.source.betaM = var.source.betaM * const.deg2rad
-  var.source.alphaM = const.halfpi - var.source.alphaM
-  #print("check output")
-  #print (var.source.alphaM)
-
-  var.source.zeta = var.source.zeta *const.deg2rad
-  var.source.eta = var.source.eta * const.deg2rad
-
-  var.source.rrM = np.array([0.0,0.0,0.0])
-  var.source.rrM[0] = const.rm *np.sin(var.source.alphaM) * np.cos(var.source.betaM)
-  var.source.rrM[1] = const.rm *np.sin(var.source.alphaM) * np.sin(var.source.betaM)
-  var.source.rrM[2] = const.rm *np.cos(var.source.alphaM)
-
-  var.source.is_jet = True
-
-  ui, Si = gu.Gu_integral(var.source.sd)
-  var.source.ui = ui
-  var.source.Gu_precalc = Si 
-
-  axis = jet_direction(var.source.betaM, var.source.zeta, var.source.eta,var.source.rrM)
-  var.source.symmetry_axis = axis 
-  return var.source
-          				
-# end function read_sources_params
-
-
-
-# obtains Cartesian coordinates of a unit vector 
-# in the moon-centered coordinate system
-# aligned with the ejection symmetry axis
-# the source's position (rrM - Cartesian coordinates, betaM - eastern longitude),
-# the jet's zenith angle (zeta) and azimuth (eta) are known
 def jet_direction(betaM, zeta, eta, rrM):
+  '''
+  This function is used to obtain the Cartesian coordinats of a unit vector
+  in the moon-centered coordinate system aligned with the ejection symmetry axis.
+  The source position data is used for this calculation.
+
+  Args:
+   -betaM: Eastern Longitude of the jet
+   -zeta: The zenith angle of the jet
+   -eta: The azimuth of the jet
+   -rrM: Cartesian coordinates of the jet
+  Return:
+   -jetdir:  (3d-vector) unit vector in moon-centered coordinate system pointing to the direction of 
+            the axis around which ejection is symmetrical
+  Return Type:
+   -Array
+  '''
 
   rtmp = rrM / const.rm
   tmpang = 3.0 * const.halfpi-betaM

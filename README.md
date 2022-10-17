@@ -67,7 +67,12 @@ Detailed documentations and instructions are in file "distributions.py"
 All the input data are saved in file "variables.py" into their corresponding classes (source, point, and ejection distribution) so that they can be easily accessed and refrenced by other functions. 
 See "variables.py" for detailed description of each class and variable.
 
-To read in data, go to file "input.py". There are existing example functions for constucting the aforementioned classes. When necessary, the users can write their own data input functions in this file. See file "input.py for detailed documentations. 
+To read in data, go to file "input.py". There are existing example functions for constructing the aforementioned classes. When necessary, the users can write their own data input functions in this file. See file "input.py for detailed documentations. 
 
+## Call Function DUDI 
+Function DUDI in the file "integrator.py" is the piece of code doing the main work. It performes numerical integration to compute density at the given point in space for the source with given properties at the given moment of time tnow.
 
+The file "main_program.f95" is provided as a template of the main program. It calls the subroutines from the module input_data to obtain an array of sources ejecting dust and an array of the points in space where one wants to compute density. Then the program makes a double loop over the sources and over the points calling the subroutine DUDI from the module integrator. In each point the result density is the sum of densities of the dust from all the sources. OpenMP is used to speed up the calculations as for each pair of source and point the calculations are independent. Finally, the main program calls the function from module dataout to write the result into the file.
+
+Modify the file "main_program.f95" and the subroutines for input and output for your own needs.
 
