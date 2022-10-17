@@ -12,6 +12,9 @@ import ultilities as ultilities
 # in the file fname the coordinates are written as follows
 # radial distance from the moon center [m], latitude [deg], eastern longitude [deg]
 def read_spacecraft_coordinates(fname,nt):
+  '''
+  This function is the template for inputing spacecraft coordinates from files.
+  '''
   data = np.loadtxt(fname, max_rows= nt)
   data_in_arrays = data
   #print(data_in_arrays)

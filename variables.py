@@ -1,10 +1,12 @@
 ##Classes of variables
 
-class ejection_speed_properties:     # ejection speed properties 
+class ejection_speed_properties:
+  ''' This class defines parameters in ejection speed distribution'''
+       # ejection speed properties 
   def __init__(self, ud_shape, umax, umin):
-    self.ud_shape = ud_shape                 # parameter defining which distribution is used for ejection speed
-    self.umax = umax                         # gas velocity
-    self.umin = umin                         # a parameter in velocity distribution                
+    self.ud_shape = ud_shape                 # integer parameter used to select the desired distribution
+    self.umax = umax                         # maximal possible ejection speed, m/s
+    self.umin = umin                         # minimal possible ejection speed, m/s
 
 #define ud first so it can be used for the following class
 ud = ejection_speed_properties(0,0,0)
@@ -25,12 +27,12 @@ class source_properties(ejection_speed_properties):
     self.symmetry_axis = symmetry_axis       # unit vector in moon-centered coordinate system pointing to the direction of the axis around which ejection is symmetrical
     self.ejection_angle_distr = \
       ejection_angle_distr                   # parameter defining which ejection angle distribution is used; 1 -- Gaussian, 2 -- uniform cone, 3 -- parabola inside a cone
-    self.sd = sd                             # parameter to select ejected dust size distribution
-    self.ui = ui                             # interpolation grid for GRm(u,Rmin,Rmax) precalculation
-    self.Gu_precalc = Gu_precalc             # Gu(Rmin,Rmax)
+    self.sd = sd                             # parameter to select from given ejected dust size distribution
+    self.ui = ui                             # interpolation grid for Gu(u,Rmin,Rmax) precalculation, array of GRN elements
+    self.Gu_precalc = Gu_precalc             # Precalculated Gu(Rmin,Rmax), array of GRN elements
     self.production_fun = production_fun     # parameter used to select a def for production rate (if <= 0, the production rate is constant)
     self.production_rate = production_rate   # parameter used in definition of the def for production rate (usually the normalization factor)
-    self.is_jet = is_jet                     #  True  if the ejection is concentrated (omega is small)
+    self.is_jet = is_jet                     #  True  if the ejection is concentrated (recommendo the define as True when source.omega < 0.1)
    
     #type(ejection_speed_properties) ud       # parameters of ejection speed distribution
     self.ud_shape = ejection_speed_properties.ud_shape
