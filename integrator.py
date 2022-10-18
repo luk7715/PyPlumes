@@ -23,24 +23,25 @@ veps = 1*(10**-10)
 trpower = 4
 
 
-# The function rules the integration determining the parameters and the limits
+
 def DUDI(tnow):
+  '''
+  This is the function that calculates numerical integrations to compute density at the given point in space 
+  for the source with given properties at the given moment of time tnow.
+
+  Args:
+   -tnow: moment of time at which the density is calculated. 
+  Return:
+  -density: array of 2 real numbers. The first number is
+            the density of particles on bound orbits,
+            the second number is the density of particles
+            on escaping trajectories 
+  '''
   #integer Nprestep
   # fraction which the interval of the pole integration constitutes
   # to the total interval of integration
   prestep_relative_size = 1*(10**-4)
-  #integer i
-  #real, intent(out) :: density(2)
-  #real(8), intent(in) :: tnow
-  #real(8) vc, vmax, v_limits(2), amin, vmin, vmin2, amin2
-  #type(position_in_space), intent(in) :: point
-  #type(source_properties), intent(in) :: source
-  #real(8) ldif, lsum, term, vi, f1, f2, vinterval, viprev
-  #real(8) angle, dphi, dbeta
-  #real xel(order_v_el), wel(order_v_el)
-  #real xhy(order_v_hy), why(order_v_hy)
-  #logical pole
-  
+
   dphi, dbeta, angle = ultilities.ApuTrajectory() 
   v_limits = np.array([0.0,0.0])
   Nprestep = int(0)
@@ -190,11 +191,4 @@ def estimate_N_steps_pole_integration(z, r, xi, isjet):
   
   #print("n is " + str(Nprestep))
   return Nprestep
-
-# # end def estimate_N_steps_pole_integration
-
-
-
-
-# end module integrator
 
