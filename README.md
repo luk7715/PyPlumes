@@ -69,10 +69,37 @@ See "variables.py" for detailed description of each class and variable.
 
 To read in data, go to file "input.py". There are existing example functions for constructing the aforementioned classes. When necessary, the users can write their own data input functions in this file. See file "input.py for detailed documentations. 
 
-## Call Function DUDI 
+## Call main working function
 Function DUDI(short for Dust Distribution) in the file "integrator.py" is the code that performs numerical integrations to compute density at the given point with known source parameters at the time tnow. It is the core of this model. 
+Make sure to cover all sources and desired points with DUDI.
 
+## Output of the results
+The function result_out in the module "output.py" is provided for outputing the results. It writes the result into the file "twobody_model_result.txt" in the directory "./results/" as follows:
+
+- 1st column is the density at the point
+
+- 2nd column is the density of particles on elliptic orbits
+
+- 3rd column is the density of particles on hyperbolic orbits
+	
+- 4th column is the spacecraft's radial distance in meters
+
+- 5th column is the spacecraft's latitude in degrees
+
+- 6th column is the spacecraft's eastern longitude in degrees
+
+1st column is sum of the 2nd and the 3rd.
+
+The users can write their own output functions. 
+
+
+
+# Examples and Templates
+
+## Template
 The file "template.py" is provided as a template of the main program. It calls the subroutines from the module input_data to obtain an array of sources ejecting dust and an array of the points in space where one wants to compute density. Then the program makes a double loop over the sources and over the points calling the subroutine DUDI from the module integrator. In each point the result density is the sum of densities of the dust from all the sources. OpenMP is used to speed up the calculations as for each pair of source and point the calculations are independent. Finally, the main program calls the function from module dataout to write the result into the file.
 
 Modify the file "template.py" and the subroutines for input and output for your own needs.
+
+## Example 1. The number density profile of the E2 flyby of the Cassini spacecraft at Enceladus
 
