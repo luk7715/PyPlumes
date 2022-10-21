@@ -39,8 +39,10 @@ for i in range (0, Ns):
         tmp_res[x,:] = integrator.DUDI(tnow)
     density = density + tmp_res
 
-output.cassini_flyby_out(density, ttab, bg, nt)
+output.cassini_flyby_out(density, ttab, bg, nt) #write output to files 
 
+
+##Plot the output 
 d = np.loadtxt('Pyplumes/results/E2_profile.dat', usecols=range(2))
 t = d[:,0]
 dens = d[:,1]

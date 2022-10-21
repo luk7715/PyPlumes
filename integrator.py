@@ -160,6 +160,9 @@ def DUDI(tnow):
 
 
 def estimate_N_steps_pole_integration(z, r, xi, isjet):
+  '''
+  This function is used to calculate the number of steps in the integration.
+  '''
 
   ximin = 0.17453290  	# 10 degree in radians
   ximax = 0.78539820  	# 45 degree in radians

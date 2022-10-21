@@ -23,28 +23,24 @@ europa_orbital_period = 3.06822*(10**5)	## in seconds
 Ns = 4
 #number of points on the SC trajectory for which the number density is to be calculated
 nt = 80
-	#integer i_s, i
-	#real massflux(nt,2)
 tnow = 0.0
-	#real(8) dphi(nt), ddphi, tstep
-	#real(8) mass_shallow, mass_steep, m1, m2
-	#type(source_properties) source(Ns)
-	#type(position_in_space) point(nt)
-	
+
+#readin the data
 dphi, var.point, var.source = input.get_europa_input(Ns,nt)
 
+
+#integrate the production rate over time to find the total mass
 m1 = gu. mass_production(var.source.sd[0], r1, r2)
 m2 = gu.mass_production(var.source.sd[1], r1, r2)
-#integrate the production rate over time
-
 mass_steep = var.source.production_rate * m2
 mass_shallow = var.source.production_rate * m1
 
 print("with the shallow size distribution, the total mass produced in a second is " + str(mass_shallow) +"kg\n")
 print("with the steep size distribution, the total mass produced in a second is " + str(mass_steep) +"kg\n")
 
+
+#define the parameters for integration
 massflux = np.zeros([nt,2])
-##print(var.point.rvector)
 eadini = var.source.ejection_angle_distr
 sdini = var.source.sd
 uiini = var.source.ui
@@ -52,6 +48,7 @@ GUini = var.source.Gu_precalc
 rvector_initial = var.point.rvector 
 beta_initial = var.point.beta
 
+#Loop through thetwo sources
 for i_s in range(0, Ns):
 	
 	var.source.ejection_angle_distr = var.source.ejection_angle_distr[i_s]
@@ -59,20 +56,20 @@ for i_s in range(0, Ns):
 	var.source.ui = var.source.ui[: ,i_s]
 	var.source.Gu_precalc = var.source.Gu_precalc[:,i_s] 
 
+#Loop through all data points
 	for i in range(0,nt):
 		var.point.beta = var.point.beta[i]
 		var.point.rvector = var.point.rvector[i,:]
 
 		massflux[i,:] = integrator.DUDI(tnow)
 
-		#print(massflux[i,:])
-
 		var.point.rvector = rvector_initial
 		var.point.beta = beta_initial
-		#print(var.point.beta)
+
 
 	output.surface_deposition_out(i_s+1, massflux[:,0], nt, dphi)
 
+#reset the parameters 
 	var.source.ejection_angle_distr = eadini
 	var.source.sd = sdini 
 	var.source.ui = uiini 

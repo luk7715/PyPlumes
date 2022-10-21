@@ -19,19 +19,21 @@ import variables as var
 import distributions as distf
 
 
-# calculates the function G^p_u for the array of u-values (stored in ui)
-# there are GRN values of ui uniformly distributed between umin and umax
+
 def Gu_integral(sd):
+  '''
+  This function calculates the function G^p_u for the array of u-values (stored in ui).
+  There are GRN values of ui uniformly distributed between umin and umax
+
+  Args:
+   -sd: Integer used to select distribution shape
+   '''
 
   ui = np.zeros(const.GRN)
 
   for i in range (0,const.GRN):
     ui[i] = var.ud.umin + float(i+1) / float(const.GRN)*(var.ud.umax - var.ud.umin)
   
-    #print(float(i+1) / float(const.GRN)*(var.ud.umax - var.ud.umin))
-   # print("uii is " + str(ui[i]))
-
-  #print("ui is " + str(ui))
 
   up = const.rmax
   low = const.rmin
@@ -49,12 +51,12 @@ def Gu_integral(sd):
       Si[i] = Si[i] + ldif * Wi[ii] \
         * distf.size_distribution(r_i, sd, const.p) \
         * distf.ejection_speed_distribution(ui[i], r_i)
-    # enddo
-  # enddo
+   
   
   # S * ice density [kg/m^3] * 1d-18 m^3/micron^3 * 4/3 pi, this is to obtain mass in kilogramms
   if(const.p == 3):
      Si = Si * const.rho * 1*(10**-18) * 4.0 / 3.0 * const.pi
+
   # S * pi * 1d-12 [m^2 / micron^2] to obtain area of crossection in m^2
   if(const.p == 2):
      Si = Si * const.pi * 1*(10**-12)
@@ -64,12 +66,9 @@ def Gu_integral(sd):
       f = open("PyPlumes/results/Gu_integral_outputs.txt", "a")
       f.write("\nGu has an incorrect value of " + Si[i] + "\n")
       f.close
-    # endif
-  # enddo
-  #print("si is " + str(Si))
+
   return ui, Si
   
-# # end def Gu_integral
 
 
 
