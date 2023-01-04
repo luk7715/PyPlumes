@@ -231,7 +231,10 @@ def size_distribution(R, sd, mom):
 
     case 4:
       # HERE IS THE PLACE FOR WRITING YOUR OWN PDF
-      fR = 0.0 #Replace with desired distribution
+      q = 5.0
+      fR = R**(-3)
+      C_size_distr = (r2**(1.0-q) - r1**(1.0-q)) / (1.0 - q)
+       #Replace with desired distribution
   # endselect
   fR = ( R**mom )* fR / C_size_distr
 

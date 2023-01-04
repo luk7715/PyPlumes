@@ -1,4 +1,5 @@
 ##Classes of variables
+import numpy as np
 
 class ejection_speed_properties:
   ''' This class defines parameters in ejection speed distribution'''
@@ -52,7 +53,7 @@ class position_in_space:
   This class defines the point in space where the density is calculated
   Measured in the moon's centered coordinate system
   '''
-  def __init__(self, r, r_scaled, alpha, beta, rvector, compute):
+  def __init__(self, r, r_scaled, alpha, beta, rvector,compute):
     self.r = r                                # Radial distance from the center of the moon to the spacecraft, meters
     self.r_scaled = r_scaled                  # Radial distance from the center of the moon to the spacecraft in units of the moon radius
     self.alpha = alpha                        # Polar angle of the spacecraft, in radians 
@@ -61,4 +62,9 @@ class position_in_space:
     self.compute = compute                    # TRUE if the density in this point must be calculated (allows to exclude regions where the calculations are unnecessary)
                                                           
   # end type position_in_space
-point = position_in_space(0,0,0,0,0,0)
+
+point = position_in_space
+
+pointS = np.array([[ [position_in_space for col in range(128)] for col in range(128)] for row in range(128)])
+
+

@@ -213,7 +213,62 @@ def get_europa_input(Ns, nt):
 
 # end subroutine get_europa_input
 
+def europascatter_input2(nt):
+  '''
+  This function is specifically written for getting the input data for the Europa
+  surface depositions calculation based on the templates above.
 
+  Args:
+   -nt: Numer of points to be calculated, integer
+   -Ns: Number of sources, integer
+  '''
+ 
+  ky_production = np.array([1.63043478e+21, 1.30434783e+19, 1.63043478e+18,1.30434783e+16, 1.63043478e+15])
+  # define 4 sources with the same coordinates and verticle axis
+  # of symmetry but different size- and ejection direction distributions
+  var.source.alphaM= const.halfpi; var.source.betaM = 0.0; var.source.zeta=0.0
+  var.source.eta= 0.0; var.source.production_fun= 0
+  var.source.production_rate = ky_production[0]
+  var.source.ud_shape = 1
+  var.source.ud_umin = 0.0
+  var.source.ud_umax = 1500.0
+  var.ud.ud_shape = 1 ; var.ud.umin = 0.0
+  var.ud.umax = 1500.0
+  var.source.r = const.rm
+  var.source.ejection_angle_distr = 1
+  var.source.sd = 4
+  var.source.rrM = np.array([0.0,0.0,0.0])
+  var.source.rrM[0] = const.rm *np.sin(var.source.alphaM) * np.cos(var.source.betaM)
+  var.source.rrM[1] = const.rm *np.sin(var.source.alphaM) * np.sin(var.source.betaM)
+  var.source.rrM[2] = const.rm *np.cos(var.source.alphaM)
+  var.source.is_jet = True
+  var.source.symmetry_axis = np.array([0.0,0.0,0.0])
+
+  
+
+  ui, Si = gu.Gu_integral(var.source.sd)
+ 
+  #print("ui is " + str(ui))
+  #print(Si)
+
+  var.source.ui = ui
+  var.source.Gu_precalc = Si 
+  
+  axis = jet_direction(var.source.betaM, var.source.zeta, var.source.eta,var.source.rrM)
+  var.source.symmetry_axis = axis 
+  
+  # the points are equidistantly placed on a 10deg arc
+  # having the source at one of the arc's # ends
+  dphi = np.zeros(nt)
+
+  for i in range (0,nt):
+    dphi[i] = 2.0 * float(i+1) / float(nt) *const.deg2rad
+
+  
+
+  return dphi, var.source
+
+# end subroutine get_europa_input
 
 def jet_direction(betaM, zeta, eta, rrM):
   '''

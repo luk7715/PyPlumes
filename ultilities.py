@@ -124,7 +124,7 @@ def LiNTERPOL(N, y, x, xout):
   
     	
 def norma3d(v):
-  norma3d = np.sqrt(np.dot(v,v))
+  norma3d = np.sqrt(np.abs(np.dot(v,v)))
 
   return norma3d
 # # end def norma3d
@@ -132,7 +132,7 @@ def norma3d(v):
     	
     	
 def norma2d(v):
-  norma2d = np.sqrt(np.dot(v,v)) 		
+  norma2d = np.sqrt(np.abs(np.dot(v,v))) 		
   
   return norma2d
       # # end def norma2d
@@ -324,9 +324,9 @@ def dist_between_2lines(M1, s1, M2, s2):
     A[0] = t2
     B[0] = np.dot(t2, M2)
     
-    A[1] = -[s1[1], -s1[0], 0.0]
+    A[1] = [-s1[1], s1[0], 0.0]
     B[1] = s1[0] * M1[1] - s1[1] * M1[0]
-    A[2] = -[s1[2], 0.0, -s1[0]]
+    A[2] = [-s1[2], 0.0, s1[0]]
     B[2] = s1[0] * M1[2] - s1[2] * M1[0]
     # K1 is the point where line 1 intersects the plain containing
     # line 1 and parallel to common perp# endicular of lines 1 and 2 (vector s)
@@ -343,7 +343,7 @@ def dist_between_2lines(M1, s1, M2, s2):
     
     d = norma3d(K1 - K2)
 
-  return d 
+  return d, K1, K2
 
 
       # # end def dist_between_2lines

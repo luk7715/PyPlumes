@@ -68,8 +68,8 @@ def DUDI(tnow):
   # v_max is : the maximal *possible* speed at radius r,
   # assuming that the ejection velocity is limited by gas velocity
 
-  vmax = np.sqrt(var.source.ud_umax * var.source.ud_umax \
-          + 2.0 * const.gm * (1.0 / var.point.r - 1.0 / var.source.r))
+  vmax = np.sqrt(np.abs(var.source.ud_umax * var.source.ud_umax \
+          + 2.0 * const.gm * (1.0 / var.point.r - 1.0 / var.source.r)))
 
   #print("amin is " +str(amin))
   #print(amin2)
