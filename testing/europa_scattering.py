@@ -62,7 +62,7 @@ for i in range(-Hpix, Hpix):
 			if(var.pointS[i,ii,iii].compute == True):
 				var.point = var.pointS[i,ii,iii]
 				numbernow = inte.DUDI(tnow)
-				print(str('numbernow is ' + str(numbernow)))
+				#print(str('numbernow is ' + str(numbernow)))
 			else:
 				numbernow = 0.0
 			numbertot = numbertot + numbernow
