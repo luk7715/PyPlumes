@@ -41,7 +41,7 @@ vesc = float(np.sqrt((gm * 2.00) / rm))
     # the surface parallel to the moon surface
     # parameter flux should be  True , if it is  False  : density is computed
 rho = 920.00  	# kg/m^3 
-flux =  True 
+flux =  False 
     
 # parameters of Gu def
     # p = 0 -- number density is computed, 1 -- mean radius,
@@ -55,13 +55,13 @@ rmax = 2
 # parameters controling accuracy
     # number of precalculated values of GR(u) integral
     # <=> u/u_gas goes from 0 to 1 with step 1/GRN
-GRN = 1000
+GRN = 2000
     # order of integration G(R,u) over R to obtain GR(u)
 order_R = 10
     # order of Gaussian quadrature for integration
     # of n(r, alpha, beta, v, theta, lambda) over velocity (v)
     # separately for bound and unbound particles
-order_v_el = 5
-order_v_hy = 5
+order_v_el = 10
+order_v_hy = 10
     
 

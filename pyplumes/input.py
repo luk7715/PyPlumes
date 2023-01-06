@@ -228,7 +228,7 @@ def europascatter_input2(nt):
   # of symmetry but different size- and ejection direction distributions
   var.source.alphaM= const.halfpi; var.source.betaM = 0.0; var.source.zeta=0.0
   var.source.eta= 0.0; var.source.production_fun= 0
-  var.source.production_rate = ky_production[0]
+  var.source.production_rate = ky_production[4]
   var.source.ud_shape = 1
   var.source.ud_umin = 0.0
   var.source.ud_umax = 1500.0

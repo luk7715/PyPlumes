@@ -8,11 +8,11 @@ from scipy import integrate as integrate
 
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parentdir = os.path.dirname(currentdir)
+parentdir = parentdir+"/pyplumes"
 sys.path.insert(0, parentdir) 
 
 import variables as var
 import input
-import output
 import distributions as distf
 import const
 import lineofsight as los
@@ -62,14 +62,14 @@ for i in range(-Hpix, Hpix):
 			if(var.pointS[i,ii,iii].compute == True):
 				var.point = var.pointS[i,ii,iii]
 				numbernow = inte.DUDI(tnow)
-				#print(str('numbernow is ' + str(numbernow)))
+				print(str('numbernow5 is ' + str(numbernow)))
 			else:
 				numbernow = 0.0
 			numbertot = numbertot + numbernow
 
-print(str("the 1st total number den is ") + str(numbertot) )
+print(str("the 5th total number den is ") + str(numbertot) )
 
 f = open("PyPlumes/results/ky_simulation","w")
 
-f.write(str("the 1st total number den is ") + str(numbertot)+"\n")
+f.write(str("the total number den for 50*10e-3 micron is ") + str(numbertot)+"\n")
 f.close 
